@@ -1,3 +1,4 @@
-h1{
-    color: pink;
+ /* smartphones, Android phones, landscape iPhone */
+ @media (min-width:480px) { 
+    
 }
