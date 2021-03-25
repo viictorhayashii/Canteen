@@ -5,13 +5,63 @@
             <meta name="viewport" content="width=device-width initial-scale=1.0">
             <title>Cadastro Usuario</title> 
             <link rel="stylesheet" href="../reset.css">
-            <link rel="stylesheet" href="../CadastroUsuario/assets/cadastroUsuario.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
              integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-        </head>
+             <link rel="stylesheet" href="../CadastroUsuario/assets/cadastroUsuario.css">
+            </head>
         <body>
-            <h1>ola mundo</h1>
+            <header>
+                <p id="titulo-pagina">Cadastro</p>
+            </header>
+            <main>
+                <section>
+                    <form action="">
+                        <div class="input-container">
+                            <input id="nome-usuario" class="input" type="text" pattern=".+" required />
+                            <label class="label" for="nome-usuario">Nome Completo</label>
+                        </div>
+
+                        <div class="input-container">
+                            <input id="matricula-usuario" class="input" type="number" pattern=".+" required />
+                            <label class="label" for="matricula-usuario">Matricula</label>
+                        </div>
+                        <div class="input-container">
+                            <input id="cantina-usuario" class="input" type="number" pattern=".+" required />
+                            <label class="label" for="cantina-usuario">ID da Cantina</label>
+                        </div>
+
+                        <div class="input-container">
+                            <input id="senha-usuario" class="input" type="password" pattern=".+" required />
+                            <label class="label" for="senha-usuario">Senha</label>
+                        </div>
+                        <div class="input-container">
+                            <input id="senhaConfirma-usuario" class="input" type="password" pattern=".+" required />
+                            <label class="label" for="senhaConfirma-usuario">Confirme senha</label>
+                        </div>
+
+                        <div class="input-container">
+                            <input id="email-usuario" class="input" type="text" pattern=".+" required />
+                            <label class="label" for="email-usuario">Email</label>
+                        </div>
+                        <div class="input-container">
+                            <input id="emailConfirma-usuario" class="input" type="text" pattern=".+" required />
+                            <label class="label" for="emailConfirma-usuario">Confirme email</label>
+                        </div>
+                    </form>
+                </section> 
+                <section>
+                    <input type="checkbox" id="checkbox-termo" style="width: 1rem; margin-left: 0.2rem;" required>
+                    <p for="checkbox-termo" style="color: white; margin-left: 0.5rem;">Eu li e concordo com o <a href="../TERMO-DE-CONSENTIMENTO.pdf">termo de Acordo</a></p>
+                </section>
+            </main>
+            <footer>
+                <button id="btn-cadastrarUsuario" data-form-button>Cadastrar</button>
+            </footer>
+            <div style="display:flex; justify-content: center; color: white; color: #2EC9B9; margin-top: 0.5rem;">
+                <p>Já tenho Cadastro</p>
+            </div>
         </body>
         <script src="../CadastroUsuario/assets/cadastroUsuario.js"></script>
     </html>
