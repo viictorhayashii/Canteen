@@ -1,8 +1,8 @@
  /* smartphones, Android phones, landscape iPhone */
  @media (max-width:480px) { 
-     body{
-        background-color: #292929;
-     }
+    body{
+      background-color: #292929;
+    }
     header{
         background-color: black;
         height: 4rem;
