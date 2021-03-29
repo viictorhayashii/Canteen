@@ -1,0 +1,57 @@
+ /* smartphones, Android phones, landscape iPhone */
+ @media (max-width:480px) { 
+     body{
+        background-color: #292929;
+     }
+    header{
+        background-color: black;
+        height: 4rem;
+        display:flex;
+        justify-content: center;
+    }
+    #titulo-pagina{
+        color: white;
+        padding-top: 2rem;
+    }
+    section {
+        margin: 15px;
+        display: flex;
+        padding-top: 2rem;
+    }
+    .botao{
+      background-color: black;
+      width: 100%;
+      height: 8rem;
+      border: 2px solid white;
+      display: flex;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        padding-top: 3rem;
+    }
+    #btn-cadastrarUsuario{
+        background-color: transparent;
+        border: 2px solid #2EC9B9;
+        width: 10rem;
+        height: 2.5rem;
+        color: white;
+        font-family: 'Graduate';
+        border-radius: 20px;
+    }
+    .imagem-botao{
+      transform: rotate(337deg);
+      height: 7rem;
+      padding-top: 1rem;
+      padding-left: 1rem;
+    }
+    .texto-botao{
+      font-family: 'graduate';
+      color: white;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      padding-top: 3rem;
+    }
+}
