@@ -1,0 +1,45 @@
+@media screen and (max-width:480px) { 
+    body{
+        background-color: #FFFFFF;
+     }
+    header{
+        background-color: black;
+        height: 6rem;
+        display:flex;
+    }
+    #logo-usuario{
+        height: 4.5rem;
+        padding: 1rem;
+    }
+    #nome-usuario{
+        color: white;
+        font-family: 'graduate';
+        margin-top: 1.2rem;
+        font-size: 1.5rem;
+    }
+    /*SLIDE SHOW AUTOMATIC*/
+    section{
+        margin: 0;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .content{
+        height: 11rem;
+        width: 750px;
+        overflow: hidden;
+        box-shadow: 1px 1px 15px rgb(0 0 0 / 40%);
+        border-radius: 1rem;
+      }
+      .content .images{
+        height: 100%;
+        width: 100%;
+      }
+      .images img{
+        height: 100%;
+        width: 100%;
+      }
+       
+
+}
