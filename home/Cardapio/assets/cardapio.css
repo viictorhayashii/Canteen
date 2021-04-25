@@ -1,4 +1,34 @@
  /* smartphones, Android phones, landscape iPhone */
-@media screen and (max-width:480px ) { 
-  
-}
+ @media (max-width:480px) { 
+    header{
+        background-color: black;
+        height: 4rem;
+        display:flex;
+        justify-content: center;
+    }
+
+    #titulo-pagina{
+        color: white;
+        margin-top: 2rem;
+    }
+
+    section {
+        background-color: #292929;
+        margin: 15px;
+        display: flex;
+        justify-content: center;
+    }
+
+    main{
+     background-color: #292929;
+    }
+
+    div{
+        margin-top: 1rem;
+        background-color: white;
+        border-radius: 15px;
+        width: 340px;
+        height: 130px;
+    }
+ }
+ 
