@@ -1,20 +1,117 @@
 @media screen and (max-width:480px) { 
-    body{
-        background-color: #FFFFFF;
-     }
-    header{
-        background-color: black;
-        height: 6rem;
-        display:flex;
-    }
-    #logo-usuario{
-        height: 4.5rem;
-        padding: 1rem;
-    }
-    #nome-usuario{
-        color: white;
-        font-family: 'graduate';
-        margin-top: 1.2rem;
-        font-size: 1.5rem;
-    }
+  body{
+      background-color: #FFFFFF;
+  }
+  header{
+      background-color: black;
+      height: 8rem;
+  }
+  .logo-usuario{
+    height: 2.1rem;
+  }
+  .nav{
+      padding-left: 1.4rem;
+      padding-top: 1.4rem;    
+  }
+  .texto-nav{
+      color: white;
+      font-family: 'Graduate';
+      margin-left: 1rem;
+      margin-top: 0.2rem;
+      font-size: 1.3rem;
+  }
+  .pesquisa-nav{
+      width: 100%;
+      padding-top: 1rem;
+  }
+  .search{
+    width: 85%;
+    height: 2.2rem;
+    border-radius: 0 2rem 2rem 0;
+  }
+  .search:focus{
+      border: 2px solid #EF5533;;
+  }
+
+  .slideshow-container {
+    position: relative;
+    margin: auto;
+    width: 85%;
+    top: 1rem;
+  }
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  .active {
+    background-color: #717171;
+  }
+  .imagem-slide{
+    width: 100%;
+    border-radius: .80rem;
+    height: 11rem;
+    background-position: center;
+  }
+  hr{
+    margin: 1rem 2rem;
+    color: inherit;
+    background-color: #EF5533;
+    border: 0;
+    opacity: 75%;
+  }
+  .destaques{
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'Graduate';
+    justify-content: center;
+    padding-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+  .destaque__imagem{
+    height: 110px;
+    width: 110px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20%;
+  }
+  .destaque__imagem--cupom{
+    height: 200px;
+    width: 120px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+  }
+  footer{
+    margin-top: 1rem;
+    background-color: black;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .link__footer{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .link__imagem{
+    height: 40px;
+  }
 }
