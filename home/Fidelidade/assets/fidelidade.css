@@ -1,5 +1,49 @@
  /* smartphones, Android phones, landscape iPhone */
  @media screen and (max-width:480px) { 
+    body{
+        background-color: black;
+    }
+    header{
+        background-color: black;
+        height: 4rem;
+        display:flex;
+        justify-content: center;
+    }
+    main{
+        text-align: center;
+        margin: 1rem;
+    }
+    
 
-  
+    #titulo-pagina{
+        color: white;
+        padding-top: 2rem;
+    }
+
+    .range input{
+        margin: 3px;
+        margin-top: 20px;
+        margin-bottom: 8px;
+        height: 10px;
+        width: 75%;
+    }
+
+    .titleHistory{
+        color: white;
+        border:white 2px solid;
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+    .historyCupons{
+        background-color: #424242;
+        padding: 20px;
+        height: 285px;
+    }
+
+    .historyCupons input{
+        width: 100%;
+        color: white;
+        background-color: black;
+    }
 }
