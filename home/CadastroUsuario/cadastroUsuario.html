@@ -12,6 +12,9 @@
              <link rel="stylesheet" href="../CadastroUsuario/assets/cadastroUsuario.css">
             </head>
         <body>
+            <!-- <div class="voltar">
+                <a href="../LoginAluno/loginAluno.html"><img src="../images/voltar.png" alt="voltar" class="logo-voltar"></a>
+            </div> -->
             <header>
                 <p id="titulo-pagina">Cadastro</p>
             </header>
@@ -53,14 +56,14 @@
                 </section>
                 <section>
                     <input type="checkbox" id="checkbox-termo" style="width: 1rem; margin-left: 0.2rem;" required>
-                    <p for="checkbox-termo" style="color: white; margin-left: 0.5rem;">Eu li e concordo com o <a href="../TERMO-DE-CONSENTIMENTO.pdf">termo de Acordo</a></p>
+                    <p for="checkbox-termo" style="color: white; margin-left: 0.5rem; ">Eu li e concordo com o <a href="../TERMO-DE-CONSENTIMENTO.pdf" style="text-decoration: none;color: #EF5533;">termo de Acordo</a></p>
                 </section>
             </main>
             <footer>
-                <button id="btn-cadastrarUsuario" data-form-button>Cadastrar</button>
+                <button id="btn-cadastrarUsuario" [data-form-button]>Cadastrar</button>
             </footer>
             <div style="display:flex; justify-content: center; color: white; color: #2EC9B9; margin-top: 0.5rem;">
-                <p>Já tenho Cadastro</p>
+                <a href="../LoginAluno/loginAluno.html" style="text-decoration: none;color: #EF5533;">Já tenho Cadastro</a>
             </div>
         </body>
         <script src="../Administrador/assets/administrador.js"></script>

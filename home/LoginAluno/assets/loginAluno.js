@@ -6,11 +6,12 @@ const validarUsuario  = () =>{
     const senha = document.getElementById('senha-login').value;
     const usuarioValidado = 'abc';
     const senhaValidada = '123';
+    const error = document.querySelector('.error-login');
 
     if(usuario === usuarioValidado || senha === senhaValidada ){
         window.location.href = "../Principal/Principal.html";
     }else{
-        
+        error.setAttribute('style', 'display: flex');
     }
     
 }

@@ -6,10 +6,17 @@
         display:flex;
         justify-content: center;
     }
+    .voltar{
+        margin: 0.5rem;
+        position: absolute;
+    }
+    .logo-voltar{
+        height: 2.7rem;
+    }
 
     #titulo-pagina{
         color: white;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     section {
@@ -23,7 +30,7 @@
      background-color: #292929;
     }
 
-    div{
+    .cupom{
         margin-top: 1rem;
         background-color: white;
         border-radius: 15px;

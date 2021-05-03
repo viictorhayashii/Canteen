@@ -48,4 +48,5 @@ function validarCampos(senha,senhaConfirma,email,emailConfirma){
 }
 
 const cadastroAluno = document.querySelector('[data-form-button]');
+console.log(cadastroAluno);
 cadastroAluno.addEventListener('click', cadastrarAluno);

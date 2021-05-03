@@ -62,8 +62,9 @@
       pointer-events: none;
     }
     footer{
-        display: flex;
-        justify-content: center;
+      display: flex;
+      justify-content: center;
+      flex-flow: wrap;
     }
     #btn-entrar{
         width: 19rem;
@@ -89,7 +90,13 @@
       height: 2rem;
     }
     a{
-      padding-left: 0.5rem;
-      
+      padding-left: 0.5rem;      
+    }
+    .error-login{
+      display: none;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 0;
+      color:#EF5533 ;
     }
 }
