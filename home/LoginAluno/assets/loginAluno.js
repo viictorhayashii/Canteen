@@ -1,5 +1,6 @@
 const validarUsuario  = () =>{
-    
+    vm = this;
+    vm.login = false;
 
     const usuario = document.getElementById('usuario-login').value;
     const senha = document.getElementById('senha-login').value;
@@ -7,10 +8,9 @@ const validarUsuario  = () =>{
     const senhaValidada = '123';
 
     if(usuario === usuarioValidado || senha === senhaValidada ){
-        alert("Validado com sucesso");
-        
+        window.location.href = "../Principal/Principal.html";
     }else{
-        alert("Dados Invalidos");
+        
     }
     
 }
