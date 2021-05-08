@@ -12,11 +12,13 @@
              integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         </head>
         <body style="background-color: black;">
-                <main>
-                    <div class="logo-canteen">
-                        <img src="../images/logo.svg" alt="logo Canteen">
-                    </div>
-                    <section>
+            <header class="logo">
+                <div class="logo-canteen">
+                    <img src="../images/logo.png" alt="logo Canteen">
+                </div>
+            </header>
+                <main style="    display: flex; width: 100%; justify-content: space-between;">
+                    <section style="width: 100%; padding-right: 2rem;">
                         <form >
                             <div class="input-container">
                                 <input id="usuario-login" class="input" type="text" pattern=".+" required />
@@ -38,10 +40,10 @@
                 </footer>
                 <div style="display: flex; justify-content: space-between; width: 100%; padding: 0 .7rem 0 .7rem;;">
                     <p id="lbl-esqueci">esqueci minha senha</p>
-                    <p id="lbl-cadastro"><a href="../CadastroUsuario/cadastroUsuario.html" style="text-decoration: none;color: #EF5533;">Quero me Cadastrar</a> </p>
+                    <p id="lbl-cadastro"><a href="../CadastroUsuario/cadastroUsuario.html" style="text-decoration: none;color:white;">Quero me Cadastrar</a> </p>
                 </div>
                 
-                <div style="width: 100%; text-align: center; margin-top: 2rem;">
+                <div class="footer-redes">
                     <a href=""><img src="../images/iconfinder_Google_1298745.png" alt="Google" id="imagem-google"></a>
                     <a href=""><img src="../images/iconfinder_facebook_834722.png" alt="Google" id="imagem-google"></a>
                     <a href=""><img src="../images/104447-32.png" alt="Google" id="imagem-google" style="height: 2.3rem;"></a>
