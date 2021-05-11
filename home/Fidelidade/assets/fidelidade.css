@@ -13,12 +13,13 @@
 
     main{
         text-align: center;
-        margin: 1rem;
+        padding: 1rem;
+        background-color: #292929;
     }
 
     .cardVirtual{
         width: 100%;
-        height: 180px;
+        height: 12rem;
         background-color:  darkred;
         color: white;
         border: 1px solid white;
@@ -41,7 +42,7 @@
 
     #titulo-pagina{
         color: white;
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
 
     .range input{
@@ -62,8 +63,16 @@
 
     .historyCupons ul li{
         width: 100%;
-        color: black;
+        color: white;
         text-align: left;
-        background-color: #c2c2c2;
+        background-color: black;
+        border: 1px solid #ffffff;
+    }
+    .voltar{
+        margin: 0.5rem;
+        position: absolute;
+    }
+    .logo-voltar{
+        height: 2.7rem;
     }
 }

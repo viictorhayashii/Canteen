@@ -1,14 +1,6 @@
  /* smartphones, Android phones, landscape iPhone */
 @media screen and (max-width:480px ) { 
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        min-height: 80vh;
-        background-color: black;
-    }
-    
+
     section {
         margin: 15px;
         box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
@@ -28,7 +20,7 @@
         transition: .2s ease-in-out;
         box-sizing: border-box;
         background-color: black;
-        color: #EF5533;
+        color: #04df97;
         letter-spacing: 0.25rem;
       }
       
@@ -52,44 +44,69 @@
         font-size: 1rem;
       }
     input:valid,input:focus {
-      border-bottom: 2px solid #EF5533;  
+      border-bottom: 2px solid #04df97;  
     }
     
     input:valid + label,input:focus + label {
-      color: #EF5533;
+      color: #04df97;
       font-size: .8rem;
       top: -30px;
       pointer-events: none;
     }
     footer{
-        display: flex;
-        justify-content: center;
+      display: flex;
+      justify-content: center;
+      flex-flow: wrap;
     }
     #btn-entrar{
         width: 19rem;
         color: #FFFFFF;
-        border-color: #EF5533;
+        border-color: #04df97;
         letter-spacing: 0.2rem;
         font-family: 'Graduate';
         border-radius: 20px;
     }
     #lbl-cadastro{
       text-align: center;
-      color: #EF5533;
+      color: #04df97;
       font-size: 0.9rem;
       margin-left: 1.2rem;
       text-decoration: none;
     }
     #lbl-esqueci{
       text-align: center;
-      color: #EF5533;
+      color: white;
       margin-right: 1.2rem;
     }
     #imagem-google{
       height: 2rem;
     }
     a{
-      padding-left: 0.5rem;
-      
+      padding-left: 0.5rem;      
     }
+    .error-login{
+      display: none;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 0;
+      color:#04df97 ;
+    }
+    .logo{
+      width: 100%;
+      height: 20rem;
+      display: flex;
+      justify-content: center;
+    }
+    .logo-canteen{
+      padding-top: 4rem;
+    }
+    .footer-redes{
+      width: 100%; text-align: center; margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width:375px ) { 
+  .footer-redes{
+    margin-top: 0;
+  }
 }

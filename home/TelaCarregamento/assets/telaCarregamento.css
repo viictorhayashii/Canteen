@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+#logo{
+    background-image: url(../../images/logo.png);
+    height: 15rem;
+    width: 100%;
+    background-position: center;
+    padding-top: 8rem;
+    background-repeat: no-repeat;
+}
+#texto-carregamento{
+    width: 100%;
+    color: #04df97;
+    font-family: Graduate;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: -3rem;
+    position: absolute;
+}
