@@ -1,4 +1,12 @@
 @media screen and (max-width:480px) { 
+    .voltar{
+        margin: 0.9rem;
+        margin-top: 1.2rem;
+        position: absolute;
+      }
+      .logo-voltar{
+        height: 1.7rem;
+      }
     header{
         background-color: black;
         height: 4rem;
@@ -7,15 +15,13 @@
     }
     #titulo-pagina{
         color: white;
-        margin-top: 2rem;
+        padding: 1.5rem;
+        font-family: 'Graduate';
+        margin: 0;
     }
     section {
-        background-color: #292929;
         margin: 15px;
         display: flex;
-    }
-    main{
-     background-color: #292929;
     }
     .input-container {
          position: relative;
@@ -24,7 +30,7 @@
       
      input {
         border: 0;
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid black;
         outline: none;
         transition: .2s ease-in-out;
         box-sizing: border-box;
@@ -34,7 +40,7 @@
       
      select{
          border: 0;
-         border-bottom: 2px solid white;
+         border-bottom: 2px solid black;
          outline: none;
          transition: .2s ease-in-out;
          box-sizing: border-box;
@@ -59,14 +65,10 @@
          pointer-events: none;
      }
  
-     option{
-         background-color:  #292929;
-     }
- 
      label {
         top: 0;
         left: 0; right: 0;
-        color: white;
+        color: black;
         display: flex;
         align-items: center;
         position: absolute;
@@ -98,7 +100,6 @@
         margin-top: 3rem;
     }
     footer{
-        background-color: #292929;
         display: flex;
         justify-content: center;
         margin-top: 5rem;
@@ -111,7 +112,7 @@
          width: 13rem;
          height: 2.5rem;
          margin-top: 5rem;
-         color: white;
+         color: black;
          font-family: 'Graduate';
          border-radius: 20px;
      }

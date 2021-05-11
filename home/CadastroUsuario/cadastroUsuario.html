@@ -16,7 +16,7 @@
                 <a href="../LoginAluno/loginAluno.html"><img src="../images/voltar.png" alt="voltar" class="logo-voltar"></a>
             </div>
             <header>
-                <p id="titulo-pagina">Cadastro</p>
+                <p id="titulo-pagina">Cadastro de usuário</p>
             </header>
             <main>
                 <section>
@@ -25,7 +25,6 @@
                             <input id="nome-usuario" class="input" type="text" pattern=".+" required />
                             <label class="label" for="nome-usuario">Nome Completo</label>
                         </div>
-
                         <div class="input-container">
                             <input id="matricula-usuario" class="input" type="number" pattern=".+" required />
                             <label class="label" for="matricula-usuario">Matricula</label>
@@ -54,13 +53,13 @@
                         </div>
                     </form>
                 </section>
-                <section>
-                    <input type="checkbox" id="checkbox-termo" style="width: 1rem; margin-left: 0.2rem;" required>
-                    <p for="checkbox-termo" style="color: white; margin-left: 0.5rem; ">Eu li e concordo com o <a href="../TERMO-DE-CONSENTIMENTO.pdf" style="text-decoration: none;color: #04df97;">termo de Acordo</a></p>
-                </section>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="checkbox-termo" style="width: 1rem; margin-left: 0.2rem;" required>
+                    <p for="checkbox-termo" style="color: black; margin-left: 0.5rem; padding-left: 1rem;">Eu li e concordo com o <a href="../TERMO-DE-CONSENTIMENTO.pdf" style="text-decoration: none;color: #04df97;">termo de Acordo</a></p>
+                </div>
             </main>
             <footer>
-                <button id="btn-cadastrarUsuario" data-form-button >Cadastrar</button>
+                <button id="btn-cadastrarUsuario" data-form-button>Cadastrar</button>
             </footer>
         </body>
         <script src="../CadastroUsuario/assets/cadastroUsuario.js"></script>

@@ -1,7 +1,7 @@
  /* smartphones, Android phones, landscape iPhone */
  @media screen and (max-width:480px) { 
     body{
-        background-color: white;
+        background-color: lightsteelblue;
     }
 
     header{
@@ -14,16 +14,13 @@
     main{
         text-align: center;
         padding: 1rem;
-        background-color: #292929;
     }
 
     .cardVirtual{
         width: 100%;
         height: 12rem;
-        background-color:  darkred;
+        background-color:  indigo;
         color: white;
-        border: 1px solid white;
-        box-shadow: 4px 4px 8px -4px;
     }
 
     .numberRegistration{
@@ -59,14 +56,6 @@
     .historyCupons{
         max-height: 27rem;
         padding: 20px;
-    }
-
-    .historyCupons ul li{
-        width: 100%;
-        color: white;
-        text-align: left;
-        background-color: black;
-        border: 1px solid #ffffff;
     }
     .voltar{
         margin: 0.5rem;
