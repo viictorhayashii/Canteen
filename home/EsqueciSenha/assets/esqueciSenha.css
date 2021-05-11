@@ -56,13 +56,13 @@
       flex-flow: wrap;
     }
     #btn-entrar{
-      width: 19rem;
-      color: black;
-      border: 3px solid #04df97;
-      letter-spacing: 0.2rem;
-      font-family: 'Graduate';
-      border-radius: 20px;
-      background-color: white;
+        width: 19rem;
+        color: black;
+        border-color: #04df97;
+        letter-spacing: 0.2rem;
+        font-family: 'Graduate';
+        border-radius: 20px;
+        background-color: white;
     }
     #lbl-cadastro{
       text-align: center;
@@ -80,7 +80,7 @@
     a{
       padding-left: 0.5rem;      
     }
-    .error-login{
+    .esqueci-senha{
       display: none;
       justify-content: center;
       width: 100%;
@@ -100,46 +100,17 @@
       width: 100%;
       text-align: center;
       padding-top: 1rem;
-      padding-bottom: 1rem;
     }
     .form{
       background-color: #e4e4e4;
       padding-top: 2rem;
       border-radius: 2rem 2rem 0 0;
+      padding-bottom: 1.3rem;
     }
 }
 
-@media screen and (min-width:375px ) { 
+@media screen and (max-height:667px ) { 
   .footer-redes{
     margin-top: 0;
-  }
-    .footer-redes{
-      width: 100%;
-      text-align: center;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-    }
-}
-
-@media screen and (min-width:414px ) { 
-  .footer-redes{
-    width: 100%;
-    text-align: center;
-    padding-top: 5rem;
-    padding-bottom: 1rem;
-  }
-}
-@media screen and (min-height:800px) { 
-  .footer-redes{
-    width: 100%;
-    text-align: center;
-    padding-top: 9rem;
-    padding-bottom: 2rem;
-  }
-  .footer{
-    display: flex;
-    justify-content: center;
-    flex-flow: wrap;
-    padding-bottom: 2rem;
   }
 }
