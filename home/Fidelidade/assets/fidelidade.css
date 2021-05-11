@@ -1,7 +1,7 @@
  /* smartphones, Android phones, landscape iPhone */
  @media screen and (max-width:480px) { 
     body{
-        background-color: black;
+        background-color: white;
     }
 
     header{
@@ -22,7 +22,7 @@
         background-color:  darkred;
         color: white;
         border: 1px solid white;
-        box-shadow: 3px 10px 10px 18px;
+        box-shadow: 4px 4px 8px -4px;
     }
 
     .numberRegistration{
@@ -52,7 +52,7 @@
     }
 
     h4{
-        color: white;
+        color: black;
     }
 
     .historyCupons{
