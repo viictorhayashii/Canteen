@@ -14,14 +14,19 @@
         <body>
             <header>
                 <div class="nav">
-                    <img src="../images/1564535-24.png" alt="logo Usuario" class="logo-usuario">
-                    <h2 class="texto-nav">Bem vindo Victor</h2>
+                    <div style="    align-items: center; width: 100%;display: flex;">
+                        <a href="../Usuario/usuario.html"><img src="../images/personas.png" alt="logo Usuario" class="logo-usuario"></a>
+                        <h2 class="texto-nav">Bem Vindo Victor</h2>
+                        <a href="../LoginAluno/loginAluno.html" id="logout"><img src="../images/logout.png" alt="Sair"></a>
+                    </div>
+                    
                     <div class="pesquisa-nav">
                         <img src="../images/pesquisar.png" alt="botao pesquisar" style="height: 2rem;">
                         <input type="text" class="search" placeholder="Busque seu lanche...">
                     </div>
                 </div>                
             </header>
+
             <main>
                 <section>
                     <div class="slideshow-container">
@@ -58,10 +63,44 @@
                         <img src="../images/logoDestaques.png" alt="Logo Destaques" style="height: 25px;">
                         <h3 style="font-size: 1rem;">Destaques de Segunda Feira</h3>
                     </div>
-                    <div class="destaques">
-                        <img src="../images/lanche1.jpg" alt="" class="destaque__imagem ">
-                        <img src="../images/lanche1.jpg" alt="" class="destaque__imagem">
-                        <img src="../images/lanche1.jpg" alt="" class="destaque__imagem">
+                    <div class="destaques scrolling-wrapper-flexbox">
+                        <div class="card">
+                            <a href="#">
+                                <img src="../images/lanche1.jpg" alt="" class="destaque__imagem ">
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="#">
+                                <img src="../images/lanche1.jpg" alt="" class="destaque__imagem ">
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="#">
+                                <img src="../images/lanche1.jpg" alt="" class="destaque__imagem ">
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="#">
+                                <img src="../images/lanche1.jpg" alt="" class="destaque__imagem ">
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="#">
+                                <img src="../images/lanche1.jpg" alt="" class="destaque__imagem ">
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <a href="#">
+                                <img src="../images/lanche1.jpg" alt="" class="destaque__imagem ">
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <a href="#">
+                                <img src="../images/lanche1.jpg" alt="" class="destaque__imagem ">
+                            </a>
+                        </div>
                     </div> 
                     <hr style="margin: 1rem 4rem;">
                 </section>
@@ -84,20 +123,6 @@
                     
                 </section>
             </main>
-            <footer>
-                    <div class="link__footer">
-                        <a href="#"><img src="../images/logoUser.png" alt="" class="link__imagem"></a>
-                    </div>
-                    <div class="link__footer">
-                        <a href="../Cupons/cupons.html"><img src="../images/logoTicket.png" alt="" class="link__imagem"></a>
-                    </div>
-                    <div class="link__footer">
-                        <a href="../Cardapio/cardapio.html"><img src="../images/logoCardapio.png" alt="" class="link__imagem"></a>
-                    </div>
-                    <div class="link__footer">
-                        <a href="../Fidelidade/Fidelidade.html"><img src="../images/logoFidelidade.png" alt="" class="link__imagem"></a>
-                    </div>
-            </footer>
         </body>
         <script src="../Principal/assets/principal.js"></script>
     </html>

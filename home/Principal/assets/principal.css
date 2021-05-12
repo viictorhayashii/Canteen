@@ -3,11 +3,12 @@
       background-color: #FFFFFF;
   }
   header{
-      background-color: black;
+      background-color: #04DF97;
       height: 8rem;
   }
   .logo-usuario{
-    height: 2.1rem;
+    height: 3rem;
+    border-radius: 2rem;
   }
   .nav{
       padding-left: 1.4rem;
@@ -28,16 +29,16 @@
     width: 85%;
     height: 2.2rem;
     border-radius: 0 2rem 2rem 0;
+    border: none;
   }
   .search:focus{
-      border: 2px solid #EF5533;;
+      border: 2px solid #04DF97;;
   }
 
   .slideshow-container {
     position: relative;
     margin: auto;
-    width: 85%;
-    top: 1rem;
+    width: 100%;
   }
   .text {
     color: #f2f2f2;
@@ -61,14 +62,13 @@
   }
   .imagem-slide{
     width: 100%;
-    border-radius: .80rem;
-    height: 11rem;
+    height: 15rem;
     background-position: center;
   }
   hr{
     margin: 1rem 2rem;
     color: inherit;
-    background-color: #EF5533;
+    background-color: #04DF97;
     border: 0;
     opacity: 75%;
   }
@@ -113,5 +113,24 @@
   }
   .link__imagem{
     height: 40px;
+  }
+  #logout{
+    padding-left: 3rem;
+  }
+  .scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .card {
+    flex: 0 0 auto;
+    padding-left: .75rem;
+    padding-right: .75rem;
+  }
+}
+@media screen and (min-width:414px) { 
+  #logout{
+    padding-left: 5rem;
   }
 }

@@ -1,0 +1,60 @@
+@media screen and (max-width:480px) { 
+  body{
+      background-color: #FFFFFF;
+  }
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 4rem;
+  }
+  .texto-nav{
+      color: white;
+      font-family: 'Graduate';
+      margin-left: 3rem;
+      margin-top: 0.2rem;
+      font-size: 1.3rem;
+  }
+  #edit{
+    padding-left: 2rem;
+  }
+  #voltar{
+    padding-left: 1rem;
+  }
+
+  .botao{
+    background-color: #04DF97;
+    color: white;
+    text-decoration: none;
+    padding: .75rem;
+    width: 85%;
+  }
+  .botao-usuario{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-family: 'Graduate';
+    padding-top: 5.4rem;
+
+  }
+
+}
+
+
+@media screen and (min-width:414px) { 
+  #edit{
+    padding-left: 4rem;
+  }
+  .texto-nav{
+    color: white;
+    font-family: 'Graduate';
+    margin-left: 4rem;
+    margin-top: 0.2rem;
+    font-size: 1.3rem;
+  }
+ 
+}
