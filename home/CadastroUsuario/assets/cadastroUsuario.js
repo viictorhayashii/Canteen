@@ -9,15 +9,20 @@ const cadastrarAluno  = () =>{
     const senhaConfirma = document.getElementById('senhaConfirma-usuario').value;
     const email = document.getElementById('email-usuario').value;
     const emailConfirma = document.getElementById('emailConfirma-usuario').value;
-    const termo = document.getElementById('checkbox-termo');
+    const termo = document.getElementById('checkbox-termo').checked;
 
     validarFormulario(nome,matricula,idCantina,senha,senhaConfirma,email,emailConfirma,termo);
     validarCampos(senha,senhaConfirma,email,emailConfirma);
 
     if(validaForm === true){
-        alunos = [nome,matricula,idCantina,senha,senhaConfirma,email,emailConfirma,termo];
-        console.log(alunos);
-        
+        alunos.nome = nome;
+        alunos.matricula = matricula;
+        alunos.idCantina = idCantina;
+        alunos.senha = senha;
+        alunos.senhaConfirma = senhaConfirma;
+        alunos.email = email;
+        alunos.emailConfirma = emailConfirma;
+        alunos.termo = termo;
     }
 
 }
