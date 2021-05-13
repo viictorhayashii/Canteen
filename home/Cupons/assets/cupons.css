@@ -16,18 +16,20 @@
 
     #titulo-pagina{
         color: white;
-        margin-top: 1rem;
+        padding: 1.5rem;
+        font-family: 'Graduate';
+        margin: 0;
     }
 
     section {
-        background-color: #292929;
+        background-color: #f2f2f2;
         margin: 15px;
         display: flex;
         justify-content: center;
     }
 
     main{
-     background-color: #292929;
+     background-color: #f2f2f2;
     }
 
     .cupom{

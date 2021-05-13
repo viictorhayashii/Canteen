@@ -1,4 +1,140 @@
  /* smartphones, Android phones, landscape iPhone */
- @media screen and (min-width:480px) { 
+ @media screen and (max-width:480px) { 
+    body{
+        background-color: #f2f2f2;
+    }
+
+    .voltar{
+        margin: 0.9rem;
+        margin-top: 1.2rem;
+        position: absolute;
+    }
+
+    .logo-voltar{
+        height: 1.7rem;
+    }
+
+    .cabecalho{
+        background-color: black;
+        height: 4rem;
+        display:flex;
+        justify-content: center;
+    }
+
+    .titulo-pagina{
+        color: white;
+        padding: 1.5rem;
+        font-family: 'Graduate';
+        margin: 0;
+    }
+
+    section {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    main{
+        background-color: #f2f2f2;
+    }
+
+    .input-container {
+        position: relative;
+        width: 21rem;
+        padding-bottom: 1rem;
+    }  
+
+    input {
+        border: 0;
+        border-bottom: 2px solid black;
+        outline: none;
+        transition: .2s ease-in-out;
+        box-sizing: border-box;
+        background-color: transparent;
+        color: #04df97;
+    }
+     
+    select{
+        border: 0;
+        border-bottom: 2px solid black;
+        outline: none;
+        transition: .2s ease-in-out;
+        box-sizing: border-box;
+        background-color: transparent;
+        color: #04df97;
+    }
+ 
+    select,label {
+        width: 100%;
+        height: 2rem;
+        font-size: 1rem;
+    }
+ 
+    select:valid,select:focus {
+        border-bottom: 2px solid #04df97;  
+    }
+ 
+    select:valid + label,select:focus + label {
+        color: #04df97;
+        font-size: .8rem;
+        top: -30px;
+        pointer-events: none;
+    }
+ 
+    option{
+        background-color:  #f2f2f2;
+    }
+ 
+    label {
+        top: 0;
+        left: 0; right: 0;
+        color: black;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        font-size: 1rem;
+        cursor: text;
+        transition: .2s ease-in-out;
+        box-sizing: border-box;
     
+    }
+      
+    input,label {
+        width: 100%;
+        height: 2rem;
+        font-size: 1rem;
+    }
+ 
+    input:valid,input:focus {
+        border-bottom: 2px solid #04df97;  
+    }
+    
+    input:valid + label,input:focus + label {
+        color: #04df97;
+        font-size: .8rem;
+        top: -30px;
+        pointer-events: none;
+    }
+ 
+    div{
+        margin-top: 1.5rem;
+    }
+
+    footer{
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    #btn-excluirProduto{
+        background-color: transparent;
+        border: 2px solid #04df97;
+        width: 13rem;
+        height: 2.5rem;
+        color: black;
+        font-family: 'Graduate';
+        border-radius: 20px;
+    }
 }

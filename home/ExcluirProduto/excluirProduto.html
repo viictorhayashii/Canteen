@@ -3,15 +3,58 @@
         <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width initial-scale=1.0">
-            <title>Excluir Produtos</title> 
+            <title>Excluir Produto</title> 
             <link rel="stylesheet" href="../reset.css">
-            <link rel="stylesheet" href="../ExcluirProduto/assets/excluirProduto.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-             integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+            <link rel="stylesheet" href="../ExcluirProduto/assets/excluirProduto.css">
         </head>
         <body>
-            <h1>ola mundo</h1>
+            <div class="voltar">
+                <a href="../LoginAluno/loginAluno.html"><img src="../images/voltar.png" alt="voltar" class="logo-voltar"></a>
+            </div>
+            <header class="cabecalho">
+                <p class="titulo-pagina">Excluir Produto</p>
+            </header>
+            <main>
+                <section>
+                    <form action="">
+                        <div class="input-container">
+                            <input id="codigoProduto" class="input" type="text" pattern=".+" required />
+                            <label class="label" for="codigoProduto">Código Produto</label>
+                        </div>
+
+                        <div class="input-container">
+                            <input id="tituloProduto" class="input" type="text" pattern=".+" required />
+                            <label class="label" for="tituloProduto">Título Produto</label>
+                        </div>
+
+                        <div class="input-container">
+                            <select id="categorias" class="input" type="text" pattern=".+" required >
+                            <option value=""></option>
+                            <option value="Salgados">Salgados</option>
+                            <option value="Doces">Doces</option>
+                            <option value="Bebidas">Bebidas</option>
+                            </select>
+                            <label class="label" for="categorias">Categoria</label>
+                        </div>
+
+                        <div class="input-container">
+                            <input id="putPass" class="input" type="password" pattern=".+" required />
+                            <label class="label" for="putPass">Senha</label>
+                        </div>
+
+                        <div class="input-container">
+                            <input id="confirmPass" class="input" type="password" pattern=".+" required />
+                            <label class="label" for="confirmPass">Confirme Senha</label>
+                        </div>
+                    </form>
+                </section>
+            </main>
+            <footer>
+                <button id="btn-excluirProduto" data-form-button>Excluir Produto</button>
+            </footer>
         </body>
-        <script src="../ExcluirProduto/assets/excluirProduto.js"></script>
     </html>
