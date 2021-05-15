@@ -1,55 +1,47 @@
-var validaForm = false;
-var alunos = [];
+import Usuario from "../../Connection/Schemas/usuario";
+
 const cadastrarAluno  = () =>{
-    
-    const nome = document.getElementById('nome-usuario').value;
-    const matricula = document.getElementById('matricula-usuario').value;
-    const idCantina = document.getElementById('cantina-usuario').value;
-    const senha = document.getElementById('senha-usuario').value;
+    let user = new Usuario({
+        Nome = document.getElementById('nome-usuario').value,
+        Matricula = document.getElementById('matricula-usuario').value,
+        IdCantina = document.getElementById('cantina-usuario').value,
+        Senha = document.getElementById('senha-usuario').value,
+        Email = document.getElementById('email-usuario').value,
+        Termo = document.getElementById('checkbox-termo').checked
+    });
     const senhaConfirma = document.getElementById('senhaConfirma-usuario').value;
-    const email = document.getElementById('email-usuario').value;
-    const emailConfirma = document.getElementById('emailConfirma-usuario').value;
-    const termo = document.getElementById('checkbox-termo').checked;
 
-    validarFormulario(nome,matricula,idCantina,senha,senhaConfirma,email,emailConfirma,termo);
-    validarCampos(senha,senhaConfirma,email,emailConfirma);
-
-    if(validaForm === true){
-        alunos.nome = nome;
-        alunos.matricula = matricula;
-        alunos.idCantina = idCantina;
-        alunos.senha = senha;
-        alunos.senhaConfirma = senhaConfirma;
-        alunos.email = email;
-        alunos.emailConfirma = emailConfirma;
-        alunos.termo = termo;
+    if(validarFormulario(user, senhaConfirma) && validarCampos(user, senhaConfirma))
+    {
+       user.TrySaveUser();
     }
-
 }
 
- function validarFormulario(nome,matricula,idCantina,senha,senhaConfirma,email,emailConfirma,termo){
-    if(nome.length === 0 || matricula.length === 0 ||idCantina.length === 0 || senha.length === 0 || senhaConfirma.length === 0 ||
-        email.length === 0 || emailConfirma.length === 0){
-            return alert("Preencha todos os campos") , validaForm = false;
-    }else if(termo.checked === false){
-        return alert("Aceite nossos Termos" ), validaForm = false;
-    }else{
-        return validaForm = true;
+ function validarFormulario(user, senhaConfirma){
+    if(user.nome.length === 0 && user.matricula.length === 0 && user.idCantina.length === 0 &&
+         user.senha.length === 0 && senhaConfirma.length === 0 && user.email.length === 0)
+    {
+            alert("Preencha todos os campos");
+            return false;
     }
-    
+    if(user.termo.checked === false)
+    {
+        alert("Aceite nossos Termos" );
+        return false;
+    }
+    return true;
  }
 
-function validarCampos(senha,senhaConfirma,email,emailConfirma){
-    if(senha !== senhaConfirma){
-        return alert("senhas nao Correspondem"), validaForm = false;
-    }else if(email !== emailConfirma){
-        return alert('emails nao Correspondem'), validaForm = false;
-    }else if(email.indexOf('@')==-1 || email.indexOf('.')==-1  || emailConfirma.indexOf('@')==-1 || emailConfirma.indexOf('.')==-1){
-        return alert('Por favor, informe um email válido!'), validaForm = false;
-    }else{
-        return validaForm = true;
+function validarCampos(user,senhaConfirma){
+    if(user.senha !== senhaConfirma){
+        alert("senhas nao Correspondem");
+        return false;
     }
-    
+    if(user.email.indexOf('@')==-1 || user.email.indexOf('.')==-1){
+        alert('Por favor, informe um email válido!');
+        return false;
+    }
+    return true;
 }
 
 const cadastroAluno = document.querySelector('[data-form-button]');
