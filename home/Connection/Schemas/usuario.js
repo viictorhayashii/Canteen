@@ -11,24 +11,27 @@ export default class Usuario
 
     TrySaveUser()
     {
-        console.log(this.Nome, this.Matricula, this.IdCantina, this.Senha);
         var db = OpenConnection();
-        db.transaction(this.SaveUser);
+        db.transaction(this.SaveUser());
     }
 
     SaveUser(tx)
     {
-        console.log(this.Nome, this.Matricula, this.IdCantina, this.Senha);
         var Nome = this.Nome;
         var Matricula = this.Matricula;
         var IdCantina = this.IdCantina;
         var Senha = this.Senha;
+        var Email = this.Email;
         var Termo = this.Termo;
-        tx.executeSql('CREATE TABLE IF NOT EXISTS User(Nome, Matricula, IdCantina, Senha, Email, Termo)');
-        tx.executeSql('INSERT INTO User (Nome, Matricula, IdCantina, Senha, Email, Termo)' +
-        ' values(' + Nome +', ' + Matricula +', ' + IdCantina + ', ' + Senha + ', '
-         + Email + ', ' + Termo + ')');
-        tx.executeSql('SELECT * FROM User', [], function (tx, results) {
+
+        tx.executeSql('CREATE TABLE IF NOT EXISTS Usuario(Nome,Matricula,IdCantina,Senha,Email,Termo)');
+        tx.executeSql('INSERT INTO Usuario (Nome,Matricula,IdCantina,Senha,Email,Termo) VALUES ("'+Nome+'","'+Matricula+'","'+IdCantina+'","'+Senha+'","'+Email+'","'+Termo+'")');
+
+        // tx.executeSql('CREATE TABLE IF NOT EXISTS User(Nome, Matricula, IdCantina, Senha, Email, Termo)');
+        // tx.executeSql('INSERT INTO User (Nome, Matricula, IdCantina, Senha, Email, Termo)' +
+        // ' values(' + Nome +', ' + Matricula +', ' + IdCantina + ', ' + Senha + ', '
+        //  + Email + ', ' + Termo + ')');
+        tx.executeSql('SELECT * FROM Usuario', [], function (tx, results) {
             console.log(results);
         });
     }
