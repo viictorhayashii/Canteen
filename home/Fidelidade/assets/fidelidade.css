@@ -96,8 +96,9 @@
     .pontosAcumulados .txtCoupon{
         border: none;
         text-align: left;
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-family: 'Graduate';
+        padding: 0.6rem;
     }
 
     .pontosAcumulados .txtPoints{
