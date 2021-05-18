@@ -23,10 +23,35 @@
     font-family: 'Graduate';
     margin: 0;
   }
-  section {
-    display: flex;
+  .linha-descricao{
+    background-color: #04DF97;
+    opacity: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 0.1rem;
+  }
+  .imagem-produto{
+    width: 100%;
+    height: 20rem;
+    padding: 1rem;
+    border-radius: 2rem;
+  }
+  .texto-descricao{
     width: 100%;
     justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    color: #04DF97;
+    height: 10rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  .valor-descricao{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #04DF97;
   }
   
 }
