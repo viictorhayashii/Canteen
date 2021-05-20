@@ -2,5 +2,5 @@
 
 export function OpenConnection()
 {
-    return openDatabase("database", "1,0", "Canteen", 100000);
+    return openDatabase("canteen", "1,0", "Canteen", 2 * 1024 * 1024);
 }
