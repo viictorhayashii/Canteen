@@ -22,7 +22,7 @@ const cadastrarAluno  = () =>{
     if(validarFormulario(user, senhaConfirma) && validarCampos(user, senhaConfirma))
     {
         console.log(user);
-        user.TrySaveUser();
+        user.SaveUser();
     }
 }
 

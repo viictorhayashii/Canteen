@@ -1,4 +1,4 @@
-import { OpenConnection } from "../connection";
+import { OpenConnection } from "../connection.js";
 
 var CategoriaProduto = {
     Salgados : 1,
@@ -21,9 +21,9 @@ export default class Produto
 
     SaveProduto(tx)
     {
-        tx.executeSql("CREATE TABLE IF NOT EXIST Produto(IdProduto, NomeProduto, DescricaoProduto," +
-        "Categoria");
-        tx.executeSql("INSERT INTO Produto(IdProduto, NomeProduto, DescricaoProduto, Categoria) "+
+        tx.executeSql("CREATE TABLE IF NOT EXISTS Produto(idProduto, nomeProduto, descricaoProduto," +
+        "categoria");
+        tx.executeSql("INSERT INTO Produto(idProduto, nomeProduto, descricaoProduto, categoria) "+
         "values(" + this.IdProduto +", " + this.NomeProduto + ", " + this.DescricaoProduto + 
         ", " + this.Categoria + ")");
     }

@@ -1,3 +1,5 @@
+import Produto from "../../Connection/Schemas/produto.js";
+
 var validaForm = false;
 var produtos = [];
 const cadastrarProduto  = () =>{
@@ -7,11 +9,15 @@ const cadastrarProduto  = () =>{
     const categorias = document.getElementById('categorias').value;
     const codCadastro = document.getElementById('codCadastro').value;
 
+    var prod = new Produto();
+    prod.NomeProduto = document.getElementById('tituloProduto').value;
+    prod.DescricaoProduto = document.getElementById('descProduto').value;
+    prod.Categoria = document.getElementById('categorias').value;
     validarFormulario(tituloProduto,descProduto,categorias,codCadastro);
 
     if(validaForm === true){
-        produtos = [tituloProduto,descProduto,categorias,codCadastro];
-        console.log(produtos);
+        
+        prod.SaveProduto();
         limparCampos();
     }
 }
