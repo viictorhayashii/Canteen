@@ -1,31 +1,40 @@
 import { OpenConnection } from "../connection.js";
 
-var CategoriaProduto = {
-    Salgados : 1,
-    Bebidas : 2,
-    Sobremesas : 3
-}
 
 export default class Produto 
 {
     IdProduto = null;
     NomeProduto = null;
     DescricaoProduto = null;
-    Categoria = CategoriaProduto.Salgados;
+    Categoria;
 
-    TrySaveProduto()
+    GetProductId()
     {
         var db = OpenConnection();
-        db.transaction(this.SaveProduto);
+        db.transaction(function(tx) {
+            tx.executeSql('SELECT * FROM Produto', [], function(tx, results)
+            {
+                return results.rows.length;
+            })
+        });
     }
 
-    SaveProduto(tx)
+    SaveProduto()
     {
-        tx.executeSql("CREATE TABLE IF NOT EXISTS Produto(idProduto, nomeProduto, descricaoProduto," +
-        "categoria");
-        tx.executeSql("INSERT INTO Produto(idProduto, nomeProduto, descricaoProduto, categoria) "+
-        "values(" + this.IdProduto +", " + this.NomeProduto + ", " + this.DescricaoProduto + 
-        ", " + this.Categoria + ")");
+        var idProd = this.GetProductId();
+        console.log(idProd);
+        return;
+        var nomeProduto = this.NomeProduto;
+        var descProduto = this.DescricaoProduto;
+        var categoria = this.Categoria;
+        var db = OpenConnection();
+        db.transaction(function(tx)
+        {
+            tx.executeSql('CREATE TABLE IF NOT EXISTS Produto(idProduto unique, nomeProduto TEXT,' +
+                ' descricaoProduto TEXT, categoria TEXT)');
+            tx.executeSql('INSERT INTO Produto(idProduto, nomeProduto, descricaoProduto, categoria) '+
+            'values(?,?,?,?)', [idProd, nomeProduto, descProduto, categoria]);
+        });
     }
 
     GetProdutoByName(NomeProduto)

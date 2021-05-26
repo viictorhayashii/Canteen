@@ -1,15 +1,6 @@
 import Usuario from "../../Connection/Schemas/usuario.js";
 
 const cadastrarAluno  = () =>{
-    // let user = new Usuario({
-        // Nome = document.getElementById('nome-usuario').value,
-        // Matricula = document.getElementById('matricula-usuario').value,
-        // IdCantina = document.getElementById('cantina-usuario').value,
-        // Senha = document.getElementById('senha-usuario').value,
-        // Email = document.getElementById('email-usuario').value,
-        // Termo = document.getElementById('checkbox-termo').checked
-    // });
-
     var user = new Usuario();
     user.Nome = document.getElementById('nome-usuario').value;
     user.Matricula = document.getElementById('matricula-usuario').value;
