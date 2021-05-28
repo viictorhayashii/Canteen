@@ -12,8 +12,7 @@ const cadastrarAluno  = () =>{
 
     if(validarFormulario(user, senhaConfirma) && validarCampos(user, senhaConfirma))
     {
-        console.log(user);
-        user.SaveUser();
+        user.salvarUsuario();
     }
 }
 
@@ -21,8 +20,8 @@ const cadastrarAluno  = () =>{
     if(user.Nome.length === 0 && user.Matricula.length === 0 && user.IdCantina.length === 0 &&
          user.Senha.length === 0 && senhaConfirma.length === 0 && user.Email.length === 0)
     {
-            alert("Preencha todos os campos");
-            return false;
+        alert("Preencha todos os campos");
+        return false;
     }
     if(user.Termo.checked === false)
     {

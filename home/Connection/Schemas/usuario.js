@@ -8,8 +8,9 @@ export default class Usuario
     Senha = null;
     Email = null;
     Termo = false;
+    Lista = [];
 
-    SaveUser()
+    salvarUsuario()
     {
         var Nome = this.Nome;
         var Matricula = this.Matricula;
@@ -17,6 +18,7 @@ export default class Usuario
         var Senha = this.Senha;
         var Email = this.Email;
         var Termo = this.Termo;
+        var Lista = this.Lista;
         var db = OpenConnection();
         db.transaction(function(tx)
         {
@@ -25,5 +27,21 @@ export default class Usuario
             'values(?,?,?,?,?,?)', [Nome, Matricula, IdCantina, Senha, Email, Termo]);
         });
     }
+    consultarUsuario(){      
+        var db = OpenConnection();
+        var row = [];
+        db.transaction(function(tx) {
+            tx.executeSql('SELECT * FROM Usuario', [], function (tx, resultado) {
+                var len = resultado.rows.length;
+                for (var i=0; i<len; i++){
+                     row[i]= resultado.rows.item(i);
+                }                
+            });
+        });
+        return row;
+    }
+
+
+
 }
 

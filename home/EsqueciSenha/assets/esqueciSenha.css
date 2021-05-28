@@ -87,6 +87,13 @@
       margin-bottom: 0;
       color:#04df97 ;
     }
+    .error{
+      display: none;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 0;
+      color:#04df97 ;
+    }
     .logo{
       width: 100%;
       height: 17rem;
