@@ -1,44 +1,31 @@
+import Cupom from "../../Connection/Schemas/cupom.js";
 var validaForm = false;
-var cupons = [];
-const cadastrarProduto  = () =>{
-    
-    const tituloProduto = document.getElementById('tituloProduto').value;
-    const descricaoCupom = document.getElementById('descricaoCupom').value;
-    const categorias = document.getElementById('categorias').value;
-    const descontoCupom = document.getElementById('descontoCupom').value;
 
-    validarFormulario(tituloProduto,descricaoCupom,categorias,descontoCupom);
+const cadastrarProduto  = () =>{
+    var cupom = new Cupom();
+    cupom.NomeCupom = document.getElementById('tituloProduto').value;
+    cupom.DescricaoCupom = document.getElementById('descricaoCupom').value;
+    cupom.Categoria = document.getElementById('categorias').value;
+    cupom.DescontoCupom = document.getElementById('descontoCupom').value;
+
+    validarFormulario(cupom);
 
     if(validaForm === true){
-        cupons = [tituloProduto,descricaoCupom,categorias,descontoCupom];
-        console.log(produtos);
+        cupom.salvarCupom();
+        cupom.consultarCupom();
         limparCampos();
     }
 }
 
-let input = SimpleMaskMoney.setMask('#descontoCupom',{
-    prefix: 'R$',
-    suffix: '',
-    fixed: true,
-    fractionDigits: 2,
-    decimalSeparator: ',',
-    thousandsSeparator: '.',
-    emptyOrInvalid: () => {
-      return this.SimpleMaskMoney.args.fixed
-        ? `0${this.SimpleMaskMoney.args.decimalSeparator}00`
-        : `_${this.SimpleMaskMoney.args.decimalSeparator}__`;
-    }
-});
-
 function limparCampos(){
-    tituloProduto = document.getElementById('tituloProduto').value = '';
-    descCupom = document.getElementById('descricaoCupom').value = '';
-    categorias = document.getElementById('categorias').value = '';
-    codCadastro = document.getElementById('descontoCupom').value = '';
+    document.getElementById('tituloProduto').value = '';
+    document.getElementById('descricaoCupom').value = '';
+    document.getElementById('categorias').value = '';
+    document.getElementById('descontoCupom').value = '';
 }
 
-function validarFormulario(tituloProduto,descCupom,categorias,codCadastro){
-    if(tituloProduto.length === 0 || descCupom.length === 0 || categorias.length === 0 || codCadastro.length === 0){
+function validarFormulario(cupom){
+    if(cupom.NomeCupom.length === 0 || cupom.DescontoCupom.length === 0 || cupom.Categoria.length === 0 || cupom.DescontoCupom.length === 0){
         return alert("Preencha todos os campos") , validaForm = false;
     }else{
         return alert("Cadastrado com sucesso"), validaForm = true;
