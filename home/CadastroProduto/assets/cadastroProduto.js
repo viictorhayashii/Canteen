@@ -17,7 +17,6 @@ function limparCampos(){
     document.getElementById('tituloProduto').value = '';
      document.getElementById('descProduto').value = '';
     document.getElementById('categorias').value = '';
-    document.getElementById('codCadastro').value = '';
 }
 
 function validarFormulario(produto){
@@ -30,5 +29,14 @@ function validarFormulario(produto){
     return true;
 }
 
+function AddProductImage()
+{
+    var img = new Image();
+    img.src = 'https://media.geeksforgeeks.org/wp-content/uploads/20190529122828/bs21.png';
+    document.getElementById('product-img').appendChild(img);
+}
+
 const cadastroProduto = document.querySelector('[data-form-button2]');
 cadastroProduto.addEventListener('click', cadastrarProduto);
+const addProductImage = document.querySelector('[data-form-button]');
+addProductImage.addEventListener('click', AddProductImage);

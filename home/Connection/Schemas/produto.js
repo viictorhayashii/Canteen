@@ -8,26 +8,19 @@ export default class Produto
     DescricaoProduto = null;
     Categoria;
 
-    GetProductId()
+    SaveProduto()
     {
         var db = OpenConnection();
+        var idProd = 0;
         db.transaction(function(tx) {
             tx.executeSql('SELECT * FROM Produto', [], function(tx, results)
             {
-                return results.rows.length;
+                idProd = results.rows.length + 1;
             })
         });
-    }
-
-    SaveProduto()
-    {
-        var idProd = this.GetProductId();
-        console.log(idProd);
-        return;
         var nomeProduto = this.NomeProduto;
         var descProduto = this.DescricaoProduto;
         var categoria = this.Categoria;
-        var db = OpenConnection();
         db.transaction(function(tx)
         {
             tx.executeSql('CREATE TABLE IF NOT EXISTS Produto(idProduto unique, nomeProduto TEXT,' +

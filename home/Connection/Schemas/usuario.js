@@ -27,7 +27,7 @@ export default class Usuario
             'values(?,?,?,?,?,?)', [Nome, Matricula, IdCantina, Senha, Email, Termo]);
         });
     }
-    consultarUsuario(){      
+    consultarUsuario(){
         var db = OpenConnection();
         var row = [];
         db.transaction(function(tx) {
