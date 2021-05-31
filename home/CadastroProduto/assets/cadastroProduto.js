@@ -15,7 +15,7 @@ const cadastrarProduto  = () =>{
 
 function limparCampos(){
     document.getElementById('tituloProduto').value = '';
-     document.getElementById('descProduto').value = '';
+    document.getElementById('descProduto').value = '';
     document.getElementById('categorias').value = '';
 }
 
