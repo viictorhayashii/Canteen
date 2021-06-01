@@ -13,6 +13,7 @@ const cadastrarAluno  = () =>{
     if(validarFormulario(user, senhaConfirma) && validarCampos(user, senhaConfirma))
     {
         user.salvarUsuario();
+        alert("Cadastrado com sucesso");
     }
 }
 

@@ -4,7 +4,7 @@
   }
   header{
       background-color: #04DF97;
-      height: 8rem;
+      height: 6rem;
   }
   .logo-usuario{
     height: 3rem;
@@ -17,7 +17,7 @@
   .texto-nav{
       color: white;
       font-family: 'Graduate';
-      margin-left: 1rem;
+      margin-left: 4rem;
       margin-top: 0.2rem;
       font-size: 1.3rem;
   }
@@ -115,7 +115,7 @@
     height: 40px;
   }
   #logout{
-    padding-left: 3rem;
+    padding-left: 4rem;
   }
   .scrolling-wrapper-flexbox {
     display: flex;
