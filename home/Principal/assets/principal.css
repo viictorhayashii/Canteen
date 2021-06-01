@@ -77,7 +77,6 @@
     text-transform: uppercase;
     font-family: 'Graduate';
     justify-content: center;
-    padding-bottom: 1rem;
     flex-wrap: wrap;
   }
   .destaque__imagem{
@@ -125,8 +124,10 @@
   }
   .card {
     flex: 0 0 auto;
-    padding-left: .75rem;
-    padding-right: .75rem;
+    margin: .25rem;
+    padding-left: .50rem;
+    padding-right: .50rem;
+    border-color: transparent;
   }
 }
 @media screen and (min-width:414px) { 
