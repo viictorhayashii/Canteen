@@ -7,6 +7,7 @@ export default class Produto
     NomeProduto = null;
     DescricaoProduto = null;
     Categoria;
+    PrecoProduto;
 
     SaveProduto()
     {
@@ -21,12 +22,13 @@ export default class Produto
         var nomeProduto = this.NomeProduto;
         var descProduto = this.DescricaoProduto;
         var categoria = this.Categoria;
+        var precoProduto = this.PrecoProduto;
         db.transaction(function(tx)
         {
             tx.executeSql('CREATE TABLE IF NOT EXISTS Produto(idProduto unique, nomeProduto TEXT,' +
-                ' descricaoProduto TEXT, categoria TEXT)');
-            tx.executeSql('INSERT INTO Produto(idProduto, nomeProduto, descricaoProduto, categoria) '+
-            'values(?,?,?,?)', [idProd, nomeProduto, descProduto, categoria]);
+                ' descricaoProduto TEXT, categoria TEXT, precoProduto TEXT)');
+            tx.executeSql('INSERT INTO Produto(idProduto, nomeProduto, descricaoProduto, categoria, precoProduto) '+
+            'values(?,?,?,?,?)', [idProd, nomeProduto, descProduto, categoria, precoProduto]);
         });
     }
 
@@ -39,6 +41,7 @@ export default class Produto
                 this.NomeProduto = results.NomeProduto;
                 this.DescricaoProduto = results.DescricaoProduto;
                 this.Categoria = results.Categoria;
+                this.PrecoProduto = results.PrecoProduto
                 return this;
             })
         });
