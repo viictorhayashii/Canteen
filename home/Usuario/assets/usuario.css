@@ -10,19 +10,17 @@
     height: 4rem;
   }
   .texto-nav{
-      color: white;
-      font-family: 'Graduate';
-      margin-left: 3rem;
-      margin-top: 0.2rem;
-      font-size: 1.3rem;
+    color: white;
+    padding: 2rem;
+    font-family: 'Graduate';
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
   }
-  #edit{
-    padding-left: 2rem;
+  #edit, #voltar{
+    padding: 1rem;
   }
-  #voltar{
-    padding-left: 1rem;
-  }
-
   .botao{
     background-color: #04DF97;
     color: white;
@@ -38,22 +36,13 @@
     width: 100%;
     text-align: center;
     font-family: 'Graduate';
-    padding-top: 5.4rem;
+    padding-top: 7.4rem;
 
   }
-
   .container {
     padding: 2rem 0rem;
   }
    
-  @media (min-width: 576px) {
-    .modal-dialog {
-      max-width: 400px;
-    }
-    .modal-dialog .modal-content {
-      padding: 1rem;
-    }
-  }
   .modal-header .close {
     margin-top: 0;
     background-color: transparent;
@@ -81,18 +70,11 @@
   }
 
 }
-
-
-@media screen and (min-width:414px) { 
-  #edit{
-    padding-left: 4rem;
-  }
+@media screen and (min-width:414px) {
   .texto-nav{
     color: white;
+    padding: 1.3rem;
     font-family: 'Graduate';
-    margin-left: 4rem;
-    margin-top: 0.2rem;
-    font-size: 1.3rem;
+    margin: 0;
   }
- 
 }

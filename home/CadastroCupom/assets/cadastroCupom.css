@@ -7,6 +7,10 @@
       .logo-voltar{
         height: 1.7rem;
       }
+
+    form{
+        width: 100%;
+    }  
     header{
         background-color: black;
         height: 4rem;
@@ -25,7 +29,7 @@
     }
     .input-container {
          position: relative;
-         width: 21rem;
+         width: 100%;
      }
       
      input {
