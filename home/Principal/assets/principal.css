@@ -11,15 +11,14 @@
     border-radius: 2rem;
   }
   .nav{
-      padding-left: 1.4rem;
-      padding-top: 1.4rem;    
+    padding: 1.4rem;   
   }
   .texto-nav{
-      color: white;
-      font-family: 'Graduate';
-      margin-left: 4rem;
-      margin-top: 0.2rem;
-      font-size: 1.3rem;
+    color: white;
+    font-family: 'Graduate';
+    margin-left: 4rem;
+    margin-top: 0.2rem;
+    font-size: 1.3rem;
   }
   .pesquisa-nav{
       width: 100%;
