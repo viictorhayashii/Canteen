@@ -1,57 +1,36 @@
-var validaForm = false;
-var alunos = [];
-const cadastrarAluno  = () =>{
-    
-    const nome = document.getElementById('nome-usuario').value;
-    const matricula = document.getElementById('matricula-usuario').value;
-    const idCantina = document.getElementById('cantina-usuario').value;
-    const senha = document.getElementById('senha-usuario').value;
-    const senhaConfirma = document.getElementById('senhaConfirma-usuario').value;
-    const email = document.getElementById('email-usuario').value;
-    const emailConfirma = document.getElementById('emailConfirma-usuario').value;
-    const termo = document.getElementById('checkbox-termo').checked;
+import Adminstrador from "../../Connection/Schemas/administrador.js";
 
-    validarFormulario(nome,matricula,idCantina,senha,senhaConfirma,email,emailConfirma,termo);
-    validarCampos(senha,senhaConfirma,email,emailConfirma);
+var adm = new Adminstrador ();
+var listaAdm = [];
+listaAdm = adm.consultarAdministrador();
 
-    if(validaForm === true){
-        alunos.nome = nome;
-        alunos.matricula = matricula;
-        alunos.idCantina = idCantina;
-        alunos.senha = senha;
-        alunos.senhaConfirma = senhaConfirma;
-        alunos.email = email;
-        alunos.emailConfirma = emailConfirma;
-        alunos.termo = termo;
+const autenticarUsuario = () =>{
+
+    const email = document.querySelector('[data-form-button1]').value;
+    const senha = document.querySelector('[data-form-button2]').value;
+   
+
+    for(var i = 0; i < listaAdm.length; i++){
+        var email1 = listaAdm[i].nomeAdm;
+        var senha1 = listaAdm[i].senhaAdm;
+        var validado = false;
+        if(email1 === email && senha1 === senha){
+
+            
+        }
     }
-
 }
 
- function validarFormulario(nome,matricula,idCantina,senha,senhaConfirma,email,emailConfirma,termo){
-    if(nome.length === 0 || matricula.length === 0 ||idCantina.length === 0 || senha.length === 0 || senhaConfirma.length === 0 ||
-        email.length === 0 || emailConfirma.length === 0){
-            return alert("Preencha todos os campos") , validaForm = false;
-    }else if(termo.checked === false){
-        return alert("Aceite nossos Termos" ), validaForm = false;
-    }else{
-        return validaForm = true;
-    }
-    
- }
+const abrirModal = () =>{
+    $(document).ready(function() {             
+        $('#loginModal').modal('show');
+          $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+          })
+        });
 
-function validarCampos(senha,senhaConfirma,email,emailConfirma){
-    if(senha !== senhaConfirma){
-        return alert("senhas nao Correspondem"), validaForm = false;
-    }else if(email !== emailConfirma){
-        return alert('emails nao Correspondem'), validaForm = false;
-    }else if(email.indexOf('@')==-1 || email.indexOf('.')==-1  || emailConfirma.indexOf('@')==-1 || emailConfirma.indexOf('.')==-1){
-        return alert('Por favor, informe um email válido!'), validaForm = false;
-    }else{
-        return validaForm = true;
-    }
-    
 }
-
-const cadastroAluno = document.querySelector('[data-form-button]');
-console.log(cadastroAluno);
-cadastroAluno.addEventListener('click', cadastrarAluno);
+const botaoEditar = document.querySelector('[data-form-button]');
+const botaoLoginAdm = document.querySelector('[data-form-button3]');
+botaoEditar.addEventListener('click', abrirModal);
+botaoLoginAdm.addEventListener('click',autenticarUsuario);
