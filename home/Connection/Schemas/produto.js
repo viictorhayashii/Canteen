@@ -46,4 +46,18 @@ export default class Produto
             })
         });
     }
+
+    consultarProdutos(){
+        var db = OpenConnection();
+        var row = [];
+        db.transaction(function(tx) {
+            tx.executeSql('SELECT * FROM Produto', [], function (tx, resultado) {
+                var len = resultado.rows.length;
+                for (var i=0; i<len; i++){
+                     row[i]= resultado.rows.item(i);
+                }                
+            });
+        });
+        return row;
+    }
 }

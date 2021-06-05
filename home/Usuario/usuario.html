@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
     <html lang="pt-br">
         <head>
             <meta charset="utf-8">
@@ -9,33 +10,115 @@
             <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
              integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-             <link rel="stylesheet" href="../Usuario/assets/usuario.css">
-            </head>
+            <link rel="stylesheet" href="../Usuario/assets/usuario.css">
+        </head>
         <body>
             <header>
                 <a href="../Principal/Principal.html" id="voltar"><img src="../images/voltar.png" alt="Sair" style="height: 1.7rem;"></a>
-                <h2 class="texto-nav">Bem Vindo Victor</h2>
-                <a href="../Administrador/Adminstrador.html" id="edit"><img src="../images/edit.png" alt="Sair" style="height: 2.4rem;"></a>
+                <h2 class="texto-nav">Victor</h2>
+                <a href="../Administrador/Administrador.html" id="edit"><img src="../images/edit.png" alt="Sair" style="height: 2rem;"></a>
             </header>
            <main>
-               <div>
+                <div>
                    <img src="../images/persona.jpg" alt="Foto Perfil" style="width: 100%;">
-               </div>
-               <section>
-                <div class="botao-usuario">
-                    <a href="../Cardapio/cardapio.html" class="botao">Cardapio</a>
                 </div>
-                <div class="botao-usuario">
-                    <a href="../Cupons/cupons.html" class="botao">Cupons</a>
+                <section>
+                    <div class="botao-usuario">
+                        <a href="../Cardapio/cardapio.html" class="botao">Cardapio</a>
+                    </div>
+                    <div class="botao-usuario">
+                        <a href="../Cupons/cupons.html" class="botao">Cupons</a>
+=======
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Usuario</title>
+    <!-- jQuery -->
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+    <!-- Popper JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+    <!-- Bootstrap JS -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Usuario/assets/usuario.css">
+</head>
+
+<body>
+    <header>
+        <a href="../Principal/Principal.html" id="voltar"><img src="../images/voltar.png" alt="Sair"
+                style="height: 1.7rem;"></a>
+        <h2 class="texto-nav">Bem Vindo Victor</h2>
+        <a id="edit"><img src="../images/edit.png" alt="Sair" style="height: 2.4rem;" data-form-button data-toggle="modal" data-target="#loginModal"></a>
+    </header>
+    <main>
+        <div>
+            <img src="../images/persona.jpg" alt="Foto Perfil" style="width: 100%;">
+        </div>
+        <section>
+            <div class="botao-usuario">
+                <a href="../Cardapio/cardapio.html" class="botao">Cardapio</a>
+            </div>
+            <div class="botao-usuario">
+                <a href="../Cupons/cupons.html" class="botao">Cupons</a>
+            </div>
+            <div class="botao-usuario">
+                <a href="#" class="botao">Historico de Pedidos</a>
+            </div>
+            <div class="botao-usuario">
+                <a href="../Fidelidade/Fidelidade.html" class="botao">Pontuação</a>
+            </div>
+        </section>
+    </main>
+    <section>
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true" style="display: none;">
+            <div class="modal-dialog modal-dialog-centered" role="document" style=" width: 102%;padding: 2rem;margin-left: -4px;">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="font-family: GRADUATE; color: #04DF97;">FECHAR</span>
+                        </button>
+>>>>>>> ce25cfa5b2ea5c6d5877f544bd5bb36948bbcd26
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-title text-center">
+                            <h4 style="font-family: GRADUATE;">Login Administrador</h4>
+                        </div>
+                        <div class="d-flex flex-column text-center">
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email1"
+                                        placeholder="Email"
+                                        data-form-button1>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="password1"
+                                        placeholder="Senha"
+                                        data-form-button2>
+                                </div>
+                                <button type="button" class="btn btn-info btn-block btn-round" 
+                                style="
+                                margin-top: 1rem;
+                                width: 70%;
+                                background-color: #04DF97;
+                                color: white;"
+                                data-form-button3>Login</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="botao-usuario">
-                    <a href="#" class="botao">Historico de Pedidos</a>
-                </div>
-                <div class="botao-usuario">
-                    <a href="../Fidelidade/Fidelidade.html" class="botao">Pontuação</a>
-                </div>
-               </section>
-           </main>
-        </body>
-        <script src="../Usuario/assets/usuario.js"></script>
-    </html>
+            </div>
+
+    </section>
+
+
+</body>
+<script src="../Usuario/assets/usuario.js" type="module"></script>
+
+</html>

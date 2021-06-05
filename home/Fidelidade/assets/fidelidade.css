@@ -1,14 +1,15 @@
- /* smartphones, Android phones, landscape iPhone */
- @media screen and (max-width:480px) { 
+/* smartphones, Android phones, landscape iPhone */
+@media screen and (max-width:480px) { 
     body{
         background-color: #f2f2f2;
     }
-
+    
     .voltar{
         margin: 0.9rem;
         margin-top: 1.2rem;
         position: absolute;
     }
+
     .logo-voltar{
         height: 1.7rem;
     }
@@ -69,13 +70,6 @@
         max-height: 27rem;
         padding: 20px;
     }
-    .voltar{
-        margin: 0.5rem;
-        position: absolute;
-    }
-    .logo-voltar{
-        height: 2.7rem;
-    }
 
     .h2{
         font-family: 'Graduate';
@@ -87,5 +81,25 @@
         background-color: #f2f2f2;
         text-align: left;
     }
+
+    .pontosAcumulados{
+        height: 14rem;
+        overflow-y: scroll;
+    }
     
+    .pontosAcumulados .txtCoupon{
+        border: none;
+        text-align: left;
+        font-size: 1rem;
+        font-family: 'Graduate';
+        padding: 0.6rem;
+    }
+
+    .pontosAcumulados .txtPoints{
+        border: none;
+        text-align: right;
+        font-size: 1rem;
+        font-family: 'Graduate';
+        padding: 0.6rem;
+    }
 }
