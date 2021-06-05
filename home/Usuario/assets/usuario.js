@@ -8,14 +8,13 @@ const autenticarUsuario = () =>{
 
     const email = document.querySelector('[data-form-button1]').value;
     const senha = document.querySelector('[data-form-button2]').value;
-   
-
+    var validado = false;
     for(var i = 0; i < listaAdm.length; i++){
         var email1 = listaAdm[i].nomeAdm;
         var senha1 = listaAdm[i].senhaAdm;
-        var validado = false;
+        
         if(email1 === email && senha1 === senha){
-
+          window.location.href = "../Administrador/Administrador.html";
             
         }
     }
