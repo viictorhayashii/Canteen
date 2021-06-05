@@ -100,8 +100,8 @@
     footer{
        display: flex;
        justify-content: center;
-       margin-top: 5rem;
-       margin-bottom: 3rem;
+       margin-top: 0.2rem;
+       margin-bottom: 2rem;
     }
     #btn-adicionarImagem{
        background-color: transparent;
@@ -112,6 +112,7 @@
        font-family: 'Graduate';
        border-radius: 20px;
        text-align: center;
+       padding-top: 0.45rem;
     }
 
     input[type="file"]{
@@ -120,8 +121,9 @@
 
     #product-img
     {
-        margin-top: 3rem;
-        margin-left: 5rem;
+        width: 100%;
+        margin-top: 2rem;
+        text-align: center;
     }
 
     #preview
