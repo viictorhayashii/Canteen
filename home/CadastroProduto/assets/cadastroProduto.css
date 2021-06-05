@@ -60,7 +60,7 @@
         top: -30px;
         pointer-events: none;
     }
-    label {
+    .label {
        top: 0;
        left: 0; right: 0;
        color: black;
@@ -108,6 +108,34 @@
        color: black;
        font-family: 'Graduate';
        border-radius: 20px;
+       text-align: center;
+    }
+
+    input[type="file"]{
+        display: none;
+    }
+
+    #product-img
+    {
+        margin-top: 3rem;
+        margin-left: 5rem;
+    }
+
+    #preview
+    {
+        height: 120px;
+        width: 200px;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10%;
+    }
+
+
+    #btn-adicionarImagem:hover
+    {
+        background-color: #2EC9B9;
     }
 
     #btn-cadastraProduto{

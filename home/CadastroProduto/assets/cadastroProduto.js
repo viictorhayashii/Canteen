@@ -33,12 +33,17 @@ function validarFormulario(produto){
 
 function AddProductImage()
 {
-    var img = new Image();
-    img.src = 'https://media.geeksforgeeks.org/wp-content/uploads/20190529122828/bs21.png';
-    document.getElementById('product-img').appendChild(img);
+    if (this.files && this.files[0]) {
+        var file = new FileReader();
+        file.onload = function(e) {
+            document.getElementById("preview").src = e.target.result;
+        };       
+        file.readAsDataURL(this.files[0]);
+    }
 }
 
 const cadastroProduto = document.querySelector('[data-form-button2]');
 cadastroProduto.addEventListener('click', cadastrarProduto);
-const addProductImage = document.querySelector('[data-form-button]');
-addProductImage.addEventListener('click', AddProductImage);
+// const addProductImage = document.querySelector('[data-form-button]');
+// addProductImage.addEventListener('click', AddProductImage);
+document.getElementById("img-input").addEventListener("change", AddProductImage, false);
