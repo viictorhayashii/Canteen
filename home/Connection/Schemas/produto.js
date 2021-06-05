@@ -30,17 +30,14 @@ export default class Produto
         });
     }
 
-    GetProdutoByName(NomeProduto)
+    deleteProduto(nomeProduto)
     {
         var db = OpenConnection();
-        db.transaction(function (){
-            tx.executeSql("SELECT * FROM Produto WHERE NomeProduto = " + NomeProduto + "", [], function (tx, results){
-                this.IdProduto = results.IdProduto;
-                this.NomeProduto = results.NomeProduto;
-                this.DescricaoProduto = results.DescricaoProduto;
-                this.Categoria = results.Categoria;
-                return this;
-            })
+        db.transaction(function (tx){
+            tx.executeSql('DELETE FROM Produto WHERE nomeProduto = ?', [nomeProduto]);
+            {
+                alert("Produto Excluido Com Sucesso");
+            }
         });
     }
 
