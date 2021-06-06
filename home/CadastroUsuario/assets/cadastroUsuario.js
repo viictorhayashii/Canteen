@@ -1,4 +1,9 @@
 import Usuario from "../../Connection/Schemas/usuario.js";
+import Administrador from "../../Connection/Schemas/administrador.js"
+
+var adm = new Administrador();
+var listaAdm =[];
+listaAdm = adm.consultarAdministrador();
 
 const cadastrarAluno  = () =>{
     var user = new Usuario();
@@ -10,10 +15,11 @@ const cadastrarAluno  = () =>{
     user.Termo = document.getElementById('checkbox-termo').checked;
     const senhaConfirma = document.getElementById('senhaConfirma-usuario').value;
 
-    if(validarFormulario(user, senhaConfirma) && validarCampos(user, senhaConfirma))
+    if(validarFormulario(user, senhaConfirma) && validarCampos(user, senhaConfirma) && validarCantina(user))
     {
         user.salvarUsuario();
         alert("Cadastrado com sucesso");
+        limparCampos();
     }
 }
 
@@ -24,7 +30,7 @@ const cadastrarAluno  = () =>{
         alert("Preencha todos os campos");
         return false;
     }
-    if(user.Termo.checked === false)
+    if(user.Termo === false)
     {
         alert("Aceite nossos Termos" );
         return false;
@@ -43,7 +49,27 @@ function validarCampos(user,senhaConfirma){
     }
     return true;
 }
+var validaCantina = false;
+function validarCantina(user){
+    for(var i = 0; i < listaAdm.length; i++){
+        if(listaAdm[i].idCantina === user.IdCantina){
+            return validaCantina = true;
+        }
+    }
+    if(validaCantina === false){
+        alert("Cantina não existente");
+    }
+}
+function limparCampos(){
+    document.getElementById('nome-usuario').value = '';
+    document.getElementById('matricula-usuario').value = '';
+    document.getElementById('cantina-usuario').value = '';
+    document.getElementById('senha-usuario').value = '';
+    document.getElementById('email-usuario').value = '';
+    document.getElementById('checkbox-termo').checked = false;
+    document.getElementById('senhaConfirma-usuario').value = '';
+    document.getElementById('emailConfirma-usuario').value = '';
+}
 
 const cadastroAluno = document.querySelector('[data-form-button]');
-console.log(cadastroAluno);
 cadastroAluno.addEventListener('click', cadastrarAluno);
