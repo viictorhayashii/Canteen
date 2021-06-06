@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>Principal</title> 
+    <title>Principal</title>
     <link rel="stylesheet" href="../reset.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
@@ -11,14 +12,15 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="../Principal/assets/principal.css">
 </head>
+
 <body>
     <header>
         <a href="../Usuario/usuario.html"><img src="../images/personas.png" alt="logo Usuario" class="logo-usuario"></a>
         <h2 class="texto-nav">CANTEEN</h2>
-        <a href="../LoginAluno/loginAluno.html" id="logout"><img src="../images/logout.png" alt="Sair"></a>              
+        <a href="../LoginAluno/loginAluno.html" id="logout"><img src="../images/logout.png" alt="Sair"></a>
     </header>
     <main>
-        <section style="margin-top: 6.5rem;">
+        <section style="margin-top: 5.5rem;">
             <div class="slideshow-container">
                 <div class="mySlides">
                     <img src="../images/lanche1.jpg" class="imagem-slide">
@@ -33,84 +35,31 @@
             </div>
             <br>
             <div style="text-align:center; display: none;">
-                <span class="dot"></span> 
-                <span class="dot"></span> 
-                <span class="dot"></span> 
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
             </div>
         </section>
-        <section style="padding-top: 0.5rem;">
-            <div class="destaques" style="justify-content: left; padding-left: 1rem;">
-                <img src="../images/logoDestaques.png" alt="Logo Destaques" style="height: 25px;">
-                <h3 style="font-size: 1rem;">Destaques de Segunda Feira</h3>
+        <section style="margin-top: -2.5rem;">
+            <div class="destaques">
+                <div class="destaques-cardapio">
+                    <a href="../Cardapio/cardapio.html">
+                        <img src="../images/cardapioTcc.png" alt="cardapio" id="cardapio-principal">
+                    </a>
+                </div>
             </div>
-            <div class="destaques scrolling-wrapper-flexbox">
-                <div class="card">
-                    <a href="../DescricaoProduto/descricaoProduto.html">
-                        <img src="../images/lanche1.jpg" alt="" class="destaque__imagem ">
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="../DescricaoProduto/descricaoProduto.html">
-                        <img src="../images/pao-queijo-mineiro.jpg" alt="" class="destaque__imagem ">
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="../DescricaoProduto/descricaoProduto.html">
-                        <img src="../images/lanche1.jpg" alt="" class="destaque__imagem ">
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="../DescricaoProduto/descricaoProduto.html">
-                        <img src="../images/lanche1.jpg" alt="" class="destaque__imagem ">
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="../DescricaoProduto/descricaoProduto.html">
-                        <img src="../images/lanche1.jpg" alt="" class="destaque__imagem ">
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="../DescricaoProduto/descricaoProduto.html">
-                        <img src="../images/lanche1.jpg" alt="" class="destaque__imagem ">
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="../DescricaoProduto/descricaoProduto.html">
-                        <img src="../images/lanche1.jpg" alt="" class="destaque__imagem ">
-                    </a>
-                </div>
-            </div> 
             <hr style="margin: 1rem 3rem;">
         </section>
-        <section style="padding-top: 0.5rem;">
-            <div class="destaques" style="justify-content: left; padding-left: 1rem;">
-                <img src="../images/logoCupom.png" alt="Logo Destaques" style="height: 25px;">
-                <h3 style="font-size: 1rem;">Cupons em Destaques</h3>
-            </div>
-            <div class="destaques">
-                <a href="../DescricaoCupom/descricaoCupom.html" class="m-2">
-                    <img src="../images/cupom.jpg" alt="" class="destaque__imagem--cupom">
-                </a>
-                <a href="../DescricaoCupom/descricaoCupom.html" class="m-2">
-                    <img src="../images/cupom.jpg" alt="" class="destaque__imagem--cupom">
-                </a>
-                <a href="../DescricaoCupom/descricaoCupom.html" class="m-2">
-                    <img src="../images/cupom.jpg" alt="" class="destaque__imagem--cupom">
-                </a>
-            </div> 
-            <div class="destaques">
-                <a href="../DescricaoCupom/descricaoCupom.html" class="m-2">
-                    <img src="../images/cupom.jpg" alt="" class="destaque__imagem--cupom">
-                </a>
-                <a href="../DescricaoCupom/descricaoCupom.html" class="m-2">
-                    <img src="../images/cupom.jpg" alt="" class="destaque__imagem--cupom">
-                </a>
-                <a href="../DescricaoCupom/descricaoCupom.html" class="m-2">
-                    <img src="../images/cupom.jpg" alt="" class="destaque__imagem--cupom">
+
+        <section style="padding-bottom: 1.5rem;">
+            <div>
+                <a href="../Cupons/cupons.html">
+                    <img src="../images/cuponsTcc.png" alt="Cupons" id="cupons-principal">
                 </a>
             </div>
         </section>
     </main>
 </body>
 <script src="../Principal/assets/principal.js"></script>
+
 </html>

@@ -12,7 +12,7 @@ export default class Administrador
         var db = OpenConnection();
         db.transaction(function(tx)
         {
-            tx.executeSql('CREATE TABLE IF NOT EXISTS Administrador(nomeAdm,senhaAdm,idAdm unique,idCantina)');
+            tx.executeSql('CREATE TABLE IF NOT EXISTS Administrador(nomeAdm,senhaAdm,idAdm,idCantina)');
             tx.executeSql('INSERT INTO Administrador(nomeAdm,senhaAdm,idAdm,idCantina)' +
             'values(?,?,?,?)', [nomeAdm, senhaAdm, idAdm, idCantina]);
         });

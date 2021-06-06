@@ -115,7 +115,14 @@
       padding-bottom: 1.3rem;
     }
 }
-
+@media screen and (min-width: 413px) {
+  .form{
+    background-color: #e4e4e4;
+    padding-top: 5rem;
+    border-radius: 2rem 2rem 0 0;
+    padding-bottom: 1.3rem;
+  }
+}
 @media screen and (max-height:667px ) { 
   .footer-redes{
     margin-top: 0;
