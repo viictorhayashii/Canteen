@@ -3,7 +3,7 @@
         <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width initial-scale=1.0">
-            <title>Cupons</title> 
+            <title>Cardápio</title> 
             <link rel="stylesheet" href="../reset.css">
             <link rel="stylesheet" href="../Cupons/assets/cupons.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -11,75 +11,28 @@
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
              integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
          </head>
-        <body style="background-color: #f2f2f2;">
+        <body style="background-color: #E4E4E4">
           <div class="voltar">
             <a href="../Principal/Principal.html"><img src="../images/voltar.png" alt="voltar" class="logo-voltar"></a>
-          </div>
-          <header>
+        </div>
+        <header>
             <p id="titulo-pagina">Cupons</p>
-          </header>
-          <main>
-            <section>
-                <form action="">
-                  <div class="row">
-                    <div class="card m-3 p-0" style="width: 10rem; border-radius: 0.5rem;">
-                      <img class="card-img-top" src="../images/cupom.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text" style="text-align: center;">R$ 3,50</p>
-                      </div>
-                    </div>
-                    <div class="card m-3 p-0" style="width: 10rem; border-radius: 0.5rem;">
-                      <img class="card-img-top" src="../images/cupom.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text" style="text-align: center;">R$ 3,50</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="card m-3 p-0" style="width: 10rem; border-radius: 0.5rem;">
-                      <img class="card-img-top" src="../images/cupom.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text" style="text-align: center;">R$ 3,50</p>
-                      </div>
-                    </div>
-                    <div class="card m-3 p-0" style="width: 10rem; border-radius: 0.5rem;">
-                      <img class="card-img-top" src="../images/cupom.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text" style="text-align: center;">R$ 3,50</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="card m-3 p-0" style="width: 10rem; border-radius: 0.5rem;">
-                      <img class="card-img-top" src="../images/cupom.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text" style="text-align: center;">R$ 3,50</p>
-                      </div>
-                    </div>
-                    <div class="card m-3 p-0" style="width: 10rem; border-radius: 0.5rem;">
-                      <img class="card-img-top" src="../images/cupom.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text" style="text-align: center;">R$ 3,50</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="card m-3 p-0" style="width: 10rem; border-radius: 0.5rem;">
-                      <img class="card-img-top" src="../images/cupom.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text" style="text-align: center;">R$ 3,50</p>
-                      </div>
-                    </div>
-                    <div class="card m-3 p-0" style="width: 10rem; border-radius: 0.5rem;">
-                      <img class="card-img-top" src="../images/cupom.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text" style="text-align: center;">R$ 3,50</p>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-            </section>
-          </main>
+        </header>
+        <main>
+          <section class="cupom">
+              <img src="../images/cuponsTcc.png" alt="Cupons" class="cupom-item">
+              </img>
+              <div style="width: 100%; padding: 0 1rem 0 1rem;">
+                <hr class="cupom_linha" style="height: 0.1rem;">
+              </div>
+          </section>
+          <section class="lista-cupom">
+            <ul class="list" data-list>
+
+            </ul>
+        </section>
+        </main>
+
         </body>
-        <script src=""></script>
+        <script src="../Cupons/assets/cupons.js" type="module"></script>
     </html>

@@ -15,7 +15,7 @@ const listaProdutos = () =>{
         const lista = document.querySelector('[data-list]');
         const tarefa = document.createElement('li');
         tarefa.classList.add('linhaLista')
-        const conteudo = `<p class="content">${nome}................................................................................</p>
+        const conteudo = `<p class="content">${nome}</p>
         <p class="content2">R$ ${valorFormatado}</p>`;
         tarefa.innerHTML = conteudo;
         lista.appendChild(tarefa);

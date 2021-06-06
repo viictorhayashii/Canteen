@@ -31,19 +31,19 @@ function validarFormulario(produto){
     return true;
 }
 
-function AddProductImage()
-{
-    if (this.files && this.files[0]) {
-        var file = new FileReader();
-        file.onload = function(e) {
-            document.getElementById("preview").src = e.target.result;
-        };       
-        file.readAsDataURL(this.files[0]);
-    }
-}
+// function AddProductImage()
+// {
+//     if (this.files && this.files[0]) {
+//         var file = new FileReader();
+//         file.onload = function(e) {
+//             document.getElementById("preview").src = e.target.result;
+//         };       
+//         file.readAsDataURL(this.files[0]);
+//     }
+// }
 
 const cadastroProduto = document.querySelector('[data-form-button2]');
 cadastroProduto.addEventListener('click', cadastrarProduto);
 // const addProductImage = document.querySelector('[data-form-button]');
 // addProductImage.addEventListener('click', AddProductImage);
-document.getElementById("img-input").addEventListener("change", AddProductImage, false);
+// document.getElementById("img-input").addEventListener("change", AddProductImage, false);

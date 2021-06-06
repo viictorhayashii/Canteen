@@ -40,7 +40,24 @@
   .lista-bebidas{
     width: 100%;
     background-color: black;
-    height: 26rem;
+    height: 100%;
+    color: #04DF97;
+    font-family: 'Graduate';
+  }
+  
+  .content{
+    width: 75%;
+    border-bottom: 1px solid;
+  }
+  .linhaLista{
+    display: flex;
+    padding-top: .5rem;
+  }
+  .content2{
+    width: 25%;
+    background-color: black;
+    text-align: end;
+    padding-right: .5rem;
   }
  
 }

@@ -46,6 +46,7 @@
   }
   .content{
     width: 75%;
+    border-bottom: 1px solid;
   }
   .linhaLista{
     display: flex;
