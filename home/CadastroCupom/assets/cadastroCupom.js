@@ -34,14 +34,14 @@ function validarFormulario(cupom){
 }
 listaDeCupom = cupom.consultarCupom();
 
-var array = listaDeCupom.map(function(obj){
+// var array = listaDeCupom.map(function(obj){
 
-    return Object.keys(obj).map(function(keys){
-        return obj[keys];
-    });
-});
+//     return Object.keys(obj).map(function(keys){
+//         return obj[keys];
+//     });
+// });
 
-console.log(array);
+// console.log(array);
 
 
 $(function() {
