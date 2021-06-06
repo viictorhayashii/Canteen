@@ -1,8 +1,9 @@
 import Cupom from "../../Connection/Schemas/cupom.js";
 var validaForm = false;
-
+var listaDeCupom = [];
+var cupom = new Cupom();
 const cadastrarProduto  = () =>{
-    var cupom = new Cupom();
+    
     cupom.NomeCupom = document.getElementById('tituloProduto').value;
     cupom.DescricaoCupom = document.getElementById('descricaoCupom').value;
     cupom.Categoria = document.getElementById('categorias').value;
@@ -31,6 +32,29 @@ function validarFormulario(cupom){
         return alert("Cadastrado com sucesso"), validaForm = true;
     }
 }
+listaDeCupom = cupom.consultarCupom();
+
+var array = listaDeCupom.map(function(obj){
+
+    return Object.keys(obj).map(function(keys){
+        return obj[keys];
+    });
+});
+
+console.log(array);
+
+
+$(function() {
+  var esportes = [
+    "Natação",
+    "Futebol",
+    "Vôlei",
+    "Basquete"
+  ];
+  $("#tituloProduto" ).autocomplete({
+    source: esportes
+  });
+});
 
 const cadastroProduto = document.querySelector('[data-form-button]');
 cadastroProduto.addEventListener('click', cadastrarProduto);
