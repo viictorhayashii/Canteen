@@ -1,105 +1,90 @@
 /* smartphones, Android phones, landscape iPhone */
-@media screen and (max-width:480px) { 
-    body{
+
+@media screen and (max-width:480px) {
+    body {
         background-color: #f2f2f2;
     }
-    
-    .voltar{
+    .voltar {
         margin: 0.9rem;
         margin-top: 1.2rem;
         position: absolute;
     }
-
-    .logo-voltar{
+    .logo-voltar {
         height: 1.7rem;
     }
-
-    header{
+    header {
         background-color: black;
         height: 4rem;
-        display:flex;
+        display: flex;
         justify-content: center;
     }
-
-    main{
+    main {
         text-align: center;
         padding: 1rem;
     }
-
-    .cardVirtual{
+    .cardVirtual {
         width: 100%;
         height: 12rem;
         color: white;
         background-color: #bdd4e7;
         background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
     }
-
-    .numberRegistration{
+    .numberRegistration {
         padding-top: 3rem;
     }
-
-    .cardVirtual .card-body .numberRegistration h2{
+    .cardVirtual .card-body .numberRegistration h2 {
         font-size: 1.3rem;
         text-align: left;
     }
-
-    .cardVirtual h2{
+    .cardVirtual h2 {
         text-align: right;
         font-family: fantasy;
     }
-
-    #titulo-pagina{
+    #titulo-pagina {
         color: white;
         padding: 1.5rem;
         font-family: 'Graduate';
         margin: 0;
     }
-
-    .range input{
+    .range input {
         margin: 3px;
         margin-bottom: 30px;
         height: 10px;
         width: 75%;
     }
-
-    h4{
+    h4 {
         color: black;
     }
-
-    .historyCupons{
+    .historyCupons {
         max-height: 27rem;
         padding: 20px;
     }
-
-    .h2{
+    .h2 {
         font-family: 'Graduate';
         margin: 0;
         text-align: left;
     }
-
-    .list-group-item {
-        background-color: #f2f2f2;
-        text-align: left;
-    }
-
-    .pontosAcumulados{
-        height: 14rem;
-        overflow-y: scroll;
-    }
-    
-    .pontosAcumulados .txtCoupon{
-        border: none;
-        text-align: left;
-        font-size: 1rem;
+    .lista-cupom {
+        width: 100%;
+        background-color: black;
+        height: 100%;
+        color: #04DF97;
         font-family: 'Graduate';
-        padding: 0.6rem;
     }
-
-    .pontosAcumulados .txtPoints{
-        border: none;
-        text-align: right;
-        font-size: 1rem;
-        font-family: 'Graduate';
-        padding: 0.6rem;
+    .content {
+        width: 75%;
+        border-bottom: 1px solid;
+    }
+    .linhaLista {
+        display: flex;
+        padding-top: .5rem;
+        flex-flow: wrap;
+        text-align: initial;
+    }
+    .content2 {
+        width: 25%;
+        background-color: black;
+        text-align: end;
+        padding-right: .5rem;
     }
 }

@@ -1,13 +1,10 @@
-
 import Cupom from "../../Connection/Schemas/cupom.js";
 
 var cupom = new Cupom();
 var listaCupom = [];
 
 listaCupom = cupom.consultarCupom();
-console.log(listaCupom);
-
-const listaProdutos = () =>{
+const listaProdutos = () => {
     for (var i = 0; i < listaCupom.length; i++) {
 
         var nome = listaCupom[i].nomeCupom;
@@ -23,7 +20,7 @@ const listaProdutos = () =>{
         tarefa.innerHTML = conteudo;
         lista.appendChild(tarefa);
     }
-       
+
 }
 
 window.onload = listaProdutos;
