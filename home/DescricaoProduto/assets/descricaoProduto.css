@@ -17,6 +17,22 @@
     display:flex;
     justify-content: center;
   }
+  .botao{
+    background-color: #04DF97;
+    color: white;
+    text-decoration: none;
+    padding: .75rem;
+    width: 85%;
+  }
+  .botao-usuario{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-family: 'Graduate';
+  }
   #titulo-pagina{
     color: white;
     padding: 1.5rem;
