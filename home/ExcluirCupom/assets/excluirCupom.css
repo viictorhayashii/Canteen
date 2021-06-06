@@ -41,7 +41,7 @@
     .input-container {
         position: relative;
         width: 21rem;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
     }  
 
     input {
@@ -124,7 +124,7 @@
         background-color: #f2f2f2;
         display: flex;
         justify-content: center;
-        margin-top: 22rem;
+        margin-top: 2rem;
         margin-bottom: 3rem;
     }
 
