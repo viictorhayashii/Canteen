@@ -43,4 +43,17 @@ export default class Cupom
         console.log(row);
         return row;
     }
+
+    deleteCupom(nomeCupom)
+    {
+        var db = OpenConnection();
+        db.transaction(function (tx){
+            tx.executeSql('DELETE FROM Cupom WHERE nomeCupom = ?', [nomeCupom]);
+            {
+                alert("Cupom Excluido Com Sucesso");
+            }
+
+        });
+    }
+
 }

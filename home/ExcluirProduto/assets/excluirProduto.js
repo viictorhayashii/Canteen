@@ -11,7 +11,7 @@ var userOk = false;
 listaAdm = adm.consultarAdministrador();
 listaProduto = prod.consultarProdutos();
 
-const validarUsuario = () =>{
+const validarExclusao = () =>{
     const tituloProduto = document.getElementById('tituloProduto').value;
     const categorias = document.getElementById('categorias').value;
     const putPass = document.getElementById('putPass').value;
@@ -41,10 +41,7 @@ const validarUsuario = () =>{
         prod.consultarProdutos();
     }
 
-
-
-    
 }
 
 const botaoExcluir = document.querySelector('[data-form-button]');
-botaoExcluir.addEventListener('click', validarUsuario);
+botaoExcluir.addEventListener('click', validarExclusao);
