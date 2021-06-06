@@ -1,0 +1,53 @@
+/* smartphones, Android phones, landscape iPhone */
+@media screen and (max-width:480px) { 
+  .voltar{
+    margin: 0.9rem;
+    margin-top: 1.2rem;
+    position: absolute;
+  }
+  .logo-voltar{
+    height: 1.7rem;
+  }
+  body{
+    background-color: #F5F5F5;
+  }
+  header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #titulo-pagina{
+    color: white;
+    padding: 1.5rem;
+    font-family: 'Graduate';
+    margin: 0;
+  }
+  .foto-cardapio{
+    width: 100%;
+    height: 14rem;
+  }
+
+  .cardapio_linha{
+    opacity: 100%;
+    color: #04DF97;
+    margin-top: 1.5rem;  
+  } 
+  .linha{
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .lista-bebidas{
+    width: 100%;
+    background-color: black;
+    height: 26rem;
+  }
+ 
+}
+@media screen and (max-width:375px) { 
+  input, label{
+    width: 100%;
+    height: 1rem;
+    font-size: 1rem;
+  }
+}
