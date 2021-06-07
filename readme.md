@@ -30,6 +30,9 @@ Front-End:
 - CSS
 - HTML
 - JAVASCRIPT
+- JQUERY
+- BOOTSTRAP
+- SQLITE
 
 Banco de Dados:
 - SQLite.
