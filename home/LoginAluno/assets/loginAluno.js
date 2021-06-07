@@ -1,7 +1,7 @@
 import Usuario from "../../Connection/Schemas/usuario.js";
-// import Administrador from "../../Connection/Schemas/administrador.js"
-// var adm = new Administrador();
-// adm.salvarAdministrador("adm@canteen.com", "Admin", "0", "1234");
+ import Administrador from "../../Connection/Schemas/administrador.js"
+ var adm = new Administrador();
+ adm.salvarAdministrador("adm@canteen.com", "Admin", "0", "1234");
 
 
 

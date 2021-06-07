@@ -20,6 +20,7 @@ export default class Usuario
         var db = OpenConnection();
         db.transaction(function(tx)
         {
+            //tx.executeSql('DROP TABLE IF EXISTS Usuario');
             tx.executeSql('CREATE TABLE IF NOT EXISTS Usuario(nome,matricula unique,idCantina,senha,email,termo)');
             tx.executeSql('INSERT INTO Usuario(nome,matricula,idCantina,senha,email,termo)' +
             'values(?,?,?,?,?,?)', [Nome, Matricula, IdCantina, Senha, Email, Termo]);

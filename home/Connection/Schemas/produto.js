@@ -25,8 +25,9 @@ export default class Produto
         var precoProduto = this.PrecoProduto;
         db.transaction(function(tx)
         {
+            //tx.executeSql('DROP TABLE IF EXISTS Produto');
             tx.executeSql('CREATE TABLE IF NOT EXISTS Produto(idProduto unique, nomeProduto TEXT,' +
-                'descricaoProduto TEXT, categoria TEXT, precoProduto TEXT)');
+            'descricaoProduto TEXT, categoria TEXT, precoProduto TEXT)');
             tx.executeSql('INSERT INTO Produto(idProduto, nomeProduto, descricaoProduto, categoria, precoProduto) '+
             'values(?,?,?,?,?)', [idProd, nomeProduto, descProduto, categoria, precoProduto]);
         });
