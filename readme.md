@@ -21,11 +21,11 @@ Requisitos Não Funcionais:
 
 Tecnologias utilizadas:
 
-FRONT-END:
+Front-End:
 - CSS
 - HTML
 - JAVASCRIPT
 
-BANCO DE DADOS:
+Banco de Dados:
 - SQLite.
 
