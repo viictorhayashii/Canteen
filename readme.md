@@ -20,7 +20,9 @@ Requisitos Funcionais:
 | Portabilidade | O Sistema deve ter portabilidade móvel para ter acesso a qualquer lugar. |
 
 Requisitos Não Funcionais:
-1.	Inclusão de banco de dados (SQLite).
+| Requisito |
+| ------------ |
+| Inclusão de banco de dados (SQLite). |
 
 Tecnologias utilizadas:
 
