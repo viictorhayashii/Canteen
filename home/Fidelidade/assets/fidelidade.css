@@ -26,8 +26,8 @@
         width: 100%;
         height: 12rem;
         color: white;
-        background-color: #bdd4e7;
-        background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+        background-color: black;
+        background-image: linear-gradient( 315deg, black 23%, gray 102%);
     }
     .numberRegistration {
         padding-top: 3rem;
