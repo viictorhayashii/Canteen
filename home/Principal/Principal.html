@@ -15,9 +15,13 @@
 
 <body>
     <header>
-        <a href="../Usuario/usuario.html"><img src="../images/personas.png" alt="logo Usuario" class="logo-usuario"></a>
+        <a id="edit">
+            <img src="../images/personas.png" alt="logo Usuario" class="logo-usuario" data-form-button data-toggle="modal" data-target="#loginModal">
+        </a>
         <h2 class="texto-nav">CANTEEN</h2>
-        <a href="../LoginAluno/loginAluno.html" id="logout"><img src="../images/logout.png" alt="Sair"></a>
+        <a href="../LoginAluno/loginAluno.html" id="logout">
+            <img src="../images/logout.png" alt="Sair">
+        </a>
     </header>
     <main>
         <section style="margin-top: 5.5rem;">
@@ -40,22 +44,84 @@
                 <span class="dot"></span>
             </div>
         </section>
-        <section style="margin-top: -2.5rem;">
-            <div class="destaques">
-                <div class="destaques-cardapio">
-                    <a href="../Cardapio/cardapio.html">
-                        <img src="../images/cardapioTcc.png" alt="cardapio" id="cardapio-principal">
-                    </a>
+        <div class="row pl-3 pt-2 pr-3 pb-2 m-0" style="width: 100%; text-align: center;">
+            <a href="../Cupons/cupons.html" style="text-decoration: none; color: black; width: 50%;">
+                <div class="col-sm-2">
+                    <div class="card shadow border-warning p-0">
+                        <div class="card-body">
+                            <img src="../images/Cupom.png" style="height: 2rem;">
+                        </div>
+                        <div class="card-header">
+                            <b>CUPONS</b>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <hr style="margin: 1rem 3rem;">
-        </section>
-
-        <section style="padding-bottom: 1.5rem;">
-            <div>
-                <a href="../Cupons/cupons.html">
-                    <img src="../images/cuponsTcc.png" alt="Cupons" id="cupons-principal">
-                </a>
+            </a>
+            <a href="../Cardapio/cardapio.html" style="text-decoration: none; color: black; width: 50%;">
+                <div class="col-sm-2">
+                    <div class="card shadow border-danger p-0">
+                        <div class="card-body">
+                            <img src="../images/Cardapio.png" style="height: 2rem;">
+                        </div>
+                        <div class="card-header">
+                            <b>CARDÁPIO</b>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="row pl-3 pt-2 pr-3 pb-2 m-0" style="width: 100%; text-align: center;">
+            <a href="../Fidelidade/Fidelidade.html" style="text-decoration: none; color: black;">
+                <div class="col-sm-2 pr-1">
+                    <div class="card shadow border-success p-0">
+                        <div class="card-body">
+                            <img src="../images/Pontos.png" style="height: 2rem;">
+                        </div>
+                        <div class="card-header">
+                            <b>HISTÓRICO DE PONTOS</b>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <section>
+            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true" style="display: none;">
+                <div class="modal-dialog modal-dialog-centered" role="document" style=" width: 102%;padding: 2rem;margin-left: -4px;">
+                    <div class="modal-content">
+                        <div class="modal-header border-bottom-0">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" style="font-family: GRADUATE; color: #04DF97;">FECHAR</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-title text-center">
+                                <h4 style="font-family: GRADUATE;">Login Administrador</h4>
+                            </div>
+                            <div class="d-flex flex-column text-center">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email1"
+                                            placeholder="Email"
+                                            data-form-button1>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" id="password1"
+                                            placeholder="Senha"
+                                            data-form-button2>
+                                    </div>
+                                    <button type="button" class="btn btn-info btn-block btn-round" 
+                                    style="
+                                    margin-top: 1rem;
+                                    width: 70%;
+                                    background-color: #04DF97;
+                                    color: white;"
+                                    data-form-button3>Login</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
