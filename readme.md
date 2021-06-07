@@ -35,6 +35,7 @@ Requisitos Não Funcionais:
 | Requisito |
 | ------------ |
 | Inclusão de banco de dados (SQLite). |
+| Após e esquecimento da senha será enviado um email para a redefinição da senha. |
 
 
 ![image](https://user-images.githubusercontent.com/73305767/121069652-1b35b280-c7a4-11eb-9422-b5216edc10ac.png)
