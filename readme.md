@@ -22,9 +22,9 @@ Requisitos Não Funcionais:
 Tecnologias utilizadas:
 
 FRONT-END:
-•	CSS
-•	HTML
-•	JAVASCRIPT
+	CSS
+	HTML
+	JAVASCRIPT
 BANCO DE DADOS:
-•	SQLite.
+	SQLite.
 
