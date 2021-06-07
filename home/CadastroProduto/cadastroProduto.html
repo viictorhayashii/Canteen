@@ -1,53 +1,55 @@
 <!DOCTYPE html>
-    <html lang="pt-br">
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width initial-scale=1.0">
-            <title>Cadastro Produto</title> 
-            <link rel="stylesheet" href="../reset.css">
-            <link rel="stylesheet" href="../CadastroProduto/assets/cadastroProduto.css">
-            <link rel="preconnect" href="https://fonts.gstatic.com">
-            <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-             integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-         </head>
-        <body style="background-color: #f2f2f2;">
-          <div class="voltar">
-            <a href="../Administrador/Administrador.html"><img src="../images/voltar.png" alt="voltar" class="logo-voltar"></a>
-          </div>
-          <header>
-            <p id="titulo-pagina">Cadastro de Produto</p>
-          </header>
-          <main>
-            <section>
-                <form action="">
-                    <div class="input-container">
-                        <input id="tituloProduto" class="input" type="text" pattern=".+" required />
-                        <label class="label" for="tituloProduto">Título Produto</label>
-                    </div>
+<html lang="pt-br">
 
-                    <div class="input-container">
-                        <input id="descProduto" class="input" type="text" pattern=".+" required />
-                        <label class="label" for="descProduto">Descrição Produto</label>
-                    </div>
-                    <div class="input-container">
-                        <select id="categorias" class="input" type="text" pattern=".+" required >
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Cadastro Produto</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../CadastroProduto/assets/cadastroProduto.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body style="background-color: #f2f2f2;">
+    <div class="voltar">
+        <a href="../Administrador/Administrador.html"><img src="../images/voltar.png" alt="voltar" class="logo-voltar"></a>
+    </div>
+    <header>
+        <p id="titulo-pagina">Cadastro de Produto</p>
+    </header>
+    <main>
+        <section>
+            <form action="">
+                <div class="input-container">
+                    <input id="tituloProduto" class="input" type="text" pattern=".+" required />
+                    <label class="label" for="tituloProduto">Título Produto</label>
+                </div>
+
+                <div class="input-container">
+                    <input id="descProduto" class="input" type="text" pattern=".+" required />
+                    <label class="label" for="descProduto">Descrição Produto</label>
+                </div>
+                <div class="input-container">
+                    <select id="categorias" class="input" type="text" pattern=".+" required>
                           <option value=""></option>
                           <option value="Lanches">Lanches</option>
                           <option value="Sobremesa">Sobremesa</option>
                           <option value="Bebidas">Bebidas</option>
                         </select>
-                        <label class="label" for="categorias">Categoria</label>
-                    </div>
-                    <div class="input-container">
-                      <input id="precoProduto" class="input" type="number" pattern=".+" required  placeholder="0.00"/>
-                      <label class="label" for="precoProduto" >Preço Produto</label>
-                </form>
-            </section>
-          </main>
-          <div style="display: flex; width: 100%; justify-content: center; margin-top: 3rem;">
-            <button id="btn-cadastraProduto" data-form-button2>Cadastrar Produto</button>
-          </div>
-        </body>
-        <script src="../CadastroProduto/assets/cadastroProduto.js" type="module"></script>
-    </html>
+                    <label class="label" for="categorias">Categoria</label>
+                </div>
+                <div class="input-container">
+                    <input id="precoProduto" class="input" type="number" pattern=".+" required />
+                    <label class="label" for="precoProduto">Preço Produto</label>
+            </form>
+        </section>
+    </main>
+    <div style="display: flex; width: 100%; justify-content: center; margin-top: 3rem;">
+        <button id="btn-cadastraProduto" data-form-button2>Cadastrar Produto</button>
+    </div>
+</body>
+<script src="../CadastroProduto/assets/cadastroProduto.js" type="module"></script>
+
+</html>

@@ -1,63 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width initial-scale=1.0">
-        <title>Cadastro Cupom</title> 
-        <link rel="stylesheet" href="../reset.css">
-        <link rel="stylesheet" href="../CadastroCupom/assets/cadastroCupom.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-     </head>
-    <body style="background-color: #f2f2f2;">
-        <div class="voltar">
-            <a href="../Administrador/Administrador.html"><img src="../images/voltar.png" alt="voltar" class="logo-voltar"></a>
-        </div>
-          <header>
-            <p id="titulo-pagina">Cadastro de Cupom</p>
-          </header>
-          <main>
-            <section>
-                <form action="">
-                    <div class="input-container">
-                        <input id="tituloProduto" class="input" type="text" pattern=".+" required />
-                        <label class="label" for="tituloProduto">Título Produto</label>
-                    </div>
-                    <div class="input-container">
-                        <select id="categorias" class="input" type="text" pattern=".+" required >
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Cadastro Cupom</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../CadastroCupom/assets/cadastroCupom.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+</head>
+
+<body style="background-color: #f2f2f2;">
+    <div class="voltar">
+        <a href="../Administrador/Administrador.html"><img src="../images/voltar.png" alt="voltar" class="logo-voltar"></a>
+    </div>
+    <header>
+        <p id="titulo-pagina">Cadastro de Cupom</p>
+    </header>
+    <main>
+        <section>
+            <form action="">
+                <div class="input-container">
+                    <input id="tituloProduto" class="input" type="text" pattern=".+" required />
+                    <label class="label" for="tituloProduto">Título Produto</label>
+                </div>
+                <div class="input-container">
+                    <select id="categorias" class="input" type="text" pattern=".+" required>
                           <option value=""></option>
                           <option value="Lanches">Lanches</option>
                           <option value="Sobremesa">Sobremesa</option>
                           <option value="Bebidas">Bebidas</option>
                         </select>
-                        <label class="label" for="categorias">Categoria</label>
-                    </div>
+                    <label class="label" for="categorias">Categoria</label>
+                </div>
 
-                    <div class="input-container">
-                        <input id="descricaoCupom" class="input" type="text" pattern=".+" required />
-                        <label class="label" for="descricaoCupom">Descrição Cupom</label>
-                    </div>
+                <div class="input-container">
+                    <input id="descricaoCupom" class="input" type="text" pattern=".+" required />
+                    <label class="label" for="descricaoCupom">Descrição Cupom</label>
+                </div>
 
-                    <div class="input-container">
-                        <input id="descontoCupom" class="input" inputmode="numeric" pattern=".+" required />
-                        <label class="label" for="descontoCupom">Insira o desconto a ser aplicado</label>
-                    </div>
-                </form>
-            </section>
-          </main>
+                <div class="input-container">
+                    <input id="descontoCupom" class="input" inputmode="numeric" pattern=".+" required />
+                    <label class="label" for="descontoCupom">Insira o desconto a ser aplicado</label>
+                </div>
+            </form>
+        </section>
+    </main>
+    <div style="display: flex; width: 100%; justify-content: center; margin-top: 1rem;">
+        <button id="btn-cadastraCupom" data-form-button>Cadastrar Cupom</button>
+    </div>
+</body>
+<script src="../CadastroCupom/assets/cadastroCupom.js" type="module"></script>
 
-          <div style="display: flex; width: 100%; justify-content: center; margin-top: 1rem;">
-            <button id="btn-cadastrarImagem" data-form-button2>Inserir Imagem</button>
-          </div>
-
-          <div style="display: flex; width: 100%; justify-content: center; margin-top: 1rem;">
-            <button id="btn-cadastraCupom" data-form-button>Cadastrar Cupom</button>
-          </div>
-    </body>
-    <script src="../CadastroCupom/assets/cadastroCupom.js" type="module"></script>
 </html>
