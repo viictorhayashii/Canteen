@@ -1,4 +1,5 @@
 import Cupom from "../../Connection/Schemas/cupom.js";
+import Produto from "../../Connection/Schemas/produto.js";
 var validaForm = false;
 var listaDeCupom = [];
 var cupom = new Cupom();
@@ -45,14 +46,10 @@ listaDeCupom = cupom.consultarCupom();
 
 
 $(function() {
-  var esportes = [
-    "Natação",
-    "Futebol",
-    "Vôlei",
-    "Basquete"
-  ];
+  var prod = new Produto();
+  var listadeProdutos = prod.consultarProdutos();
   $("#tituloProduto" ).autocomplete({
-    source: esportes
+    source: listadeProdutos
   });
 });
 

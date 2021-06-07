@@ -59,10 +59,24 @@ export default class Produto {
             tx.executeSql('SELECT * FROM Produto', [], function(tx, resultado) {
                 var len = resultado.rows.length;
                 for (var i = 0; i < len; i++) {
-                    row[i] = resultado.rows.item(i);
+                    row[i] = resultado.rows.item(i).nomeProduto;
                 }
             });
         });
+        console.log(row);
         return row;
+    }
+
+    listaDeProdutos()
+    {
+        var produtos = this.consultarProdutos();
+        var listaDeNomes = [];
+        var len = produtos.length;
+        for(var i = 0; i < len; i++)
+        {
+            listaDeNomes[i] = produtos[i].nomeProduto;
+        }
+        console.log(listaDeNomes);
+        return listaDeNomes;
     }
 }
