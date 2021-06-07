@@ -23,7 +23,9 @@ const listaProdutos = () => {
         lista.appendChild(tarefa);
 
         const barraProgresso = document.querySelector('[data-progress]');
-        barraProgresso.setAttribute('style', `width: ${valorAcumulado}px;`);
+        const textoProgress = document.getElementById('texto-progress');
+        textoProgress.textContent = valorAcumulado + "PTS";
+        barraProgresso.setAttribute('style', `width: ${valorAcumulado}px;background-color: #04DF97;`);
     }
 
 }
