@@ -1,7 +1,9 @@
 # CANTEEN,
 
 Canteen é um software desenvolvido para facilitar e melhorar a experiência do usuário nas cantinas Universitárias, integrando comodidade, rapidez, eficiência e tecnologia nas cantinas. 
+
 Este projeto dará mais comodidade aos alunos, pois antes mesmo de chegar até a cantina ele já pode estar realizando sua escolha, melhorando assim o tempo de espera e filas.
+
 Também oferecemos o sistema de Cupons e Fidelização ao cliente, estimulando o aluno a sempre estar utilizando as cantinas pela vantagem dos descontos e brindes. 
 
 
