@@ -16,7 +16,7 @@ const listaProdutos = () => {
         const tarefa = document.createElement('li');
         tarefa.classList.add('linhaLista')
         const conteudo = `<p class="content">${nome}</p><p class="content2">ID:${idCupom}</p> </br>
-        <p class="content3">${descricaoCupom}</p><p class="content4">${desconto}%</p>`;
+        <p class="content3">${descricaoCupom}</p><p class="content4">R$${desconto}</p>`;
         tarefa.innerHTML = conteudo;
         lista.appendChild(tarefa);
     }
