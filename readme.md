@@ -34,6 +34,10 @@ Requisitos Não Funcionais:
 | ------------ |
 | Inclusão de banco de dados (SQLite). |
 
+
+![image](https://user-images.githubusercontent.com/73305767/121069652-1b35b280-c7a4-11eb-9422-b5216edc10ac.png)
+
+
 Tecnologias utilizadas:
 
 Front-End:
