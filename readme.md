@@ -7,14 +7,17 @@ Canteen é um software desenvolvido para cantinas universitárias. Nosso Aplicat
 
 
 Requisitos Funcionais:
-|Cardápio da Cantina | O Sistema permite a visualização dos lanches da cantina.|
-|Cupons da Cantina – O Sistema permite a visualização dos cupons disponíveis que a cantina fornece diariamente.|                   
-|Cadastro de Produto – O Sistema deve permitir o cadastro de novos produtos.|
-|Exclusão de Produto – O Sistema deve permitir a exclusão do produto já cadastrado.|
-|Cadastro de Cupons - O Sistema deve permitir o cadastro de novos cupons.|
-|Exclusão de Cupons – O Sistema deve permitir a exclusão de cupons cadastrados.|
-|Sistema Fidelidade – O Sistema deve apresentar a quantidade de pontos que o usuário tem ao comprar um cupom.|
-|Portabilidade – O Sistema deve ter portabilidade móvel para ter acesso a qualquer lugar.|
+
+| Requisito | Descrição |
+| ------------ | ------------ |
+| Cardápio da Cantina | O Sistema permite a visualização dos lanches da cantina. |
+| Cupons da Cantina | O Sistema permite a visualização dos cupons disponíveis que a cantina fornece diariamente. |                   
+| Cadastro de Produto | O Sistema deve permitir o cadastro de novos produtos. |
+| Exclusão de Produto | O Sistema deve permitir a exclusão do produto já cadastrado. |
+| Cadastro de Cupons | O Sistema deve permitir o cadastro de novos cupons. |
+| Exclusão de Cupons | O Sistema deve permitir a exclusão de cupons cadastrados. |
+| Sistema Fidelidade | O Sistema deve apresentar a quantidade de pontos que o usuário tem ao comprar um cupom. |
+| Portabilidade | O Sistema deve ter portabilidade móvel para ter acesso a qualquer lugar. |
 
 Requisitos Não Funcionais:
 1.	Inclusão de banco de dados (SQLite).
