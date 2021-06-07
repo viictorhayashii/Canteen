@@ -43,13 +43,12 @@ Requisitos Não Funcionais:
 
 Tecnologias utilizadas:
 
-Front-End:
+Front-End & Back-end:
 - CSS
 - HTML
 - JAVASCRIPT
 - JQUERY
 - BOOTSTRAP
-- SQLITE
 
 Banco de Dados:
 - SQLite.
