@@ -32,7 +32,7 @@ Requisitos Funcionais:
 | Validação de Administrador | O Sistema deverá dar acesso somente a usuarios com acesso de Administrador. |
 
 Requisitos Não Funcionais:
-| Requisito |
+| Requisitos |
 | ------------ |
 | Inclusão de banco de dados (SQLite). |
 | Após e esquecimento da senha será enviado um email para a redefinição da senha. |
