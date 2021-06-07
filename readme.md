@@ -28,6 +28,8 @@ Requisitos Funcionais:
 | Exclusão de Cupons | O Sistema deve permitir a exclusão de cupons cadastrados. |
 | Sistema Fidelidade | O Sistema deve apresentar a quantidade de pontos que o usuário tem ao comprar um cupom. |
 | Portabilidade | O Sistema deve ter portabilidade móvel para ter acesso a qualquer lugar. |
+| Cadastro de Aluno | O Sistema deve realizar o cadastro de alunos e vincula-los com as cantinas. |
+| Validação de Administrador | O Sistema deverá dar acesso somente a usuarios com acesso de Administrador. |
 
 Requisitos Não Funcionais:
 | Requisito |
