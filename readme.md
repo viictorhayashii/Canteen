@@ -10,6 +10,11 @@ Também oferecemos o sistema de Cupons e Fidelização ao cliente, estimulando o
 
 ![Capturar](https://user-images.githubusercontent.com/73305767/120947565-4d003800-c716-11eb-924e-4903232847ca.PNG)
 
+##### Lista de Usuários
+
+	 1. Administrador
+	 2. Alunos
+
 
 Requisitos Funcionais:
 
