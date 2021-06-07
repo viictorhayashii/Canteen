@@ -24,6 +24,7 @@ export default class Cupom
         });
         db.transaction(function(tx)
         {
+            //tx.executeSql('DROP TABLE IF EXISTS Cupom');
             tx.executeSql('CREATE TABLE IF NOT EXISTS Cupom(nomeCupom TEXT,descricaoCupom TEXT,categoria TEXT,descontoCupom TEXT,idCupom TEXT)');
             tx.executeSql('INSERT INTO Cupom(nomeCupom,descricaoCupom,categoria,descontoCupom,idCupom)' +
             'values(?,?,?,?,?)', [nomeCupom, descricaoCupom, categoria, descontoCupom, idCupom]);
