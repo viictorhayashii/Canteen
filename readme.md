@@ -16,13 +16,13 @@ Também oferecemos o sistema de Cupons e Fidelização ao cliente, estimulando o
 - Victor Hayashi
 - Wendel Miguel
 
-##### Lista de Usuários
+# Lista de Usuários
 
 	 1. Administrador
 	 2. Alunos
 
 
-Requisitos Funcionais:
+# Requisitos Funcionais:
 
 | Requisito | Descrição |
 | ------------ | ------------ |
@@ -37,7 +37,8 @@ Requisitos Funcionais:
 | Cadastro de Aluno | O Sistema deve realizar o cadastro de alunos e vincula-los com as cantinas. |
 | Validação de Administrador | O Sistema deverá dar acesso somente a usuarios com acesso de Administrador. |
 
-Requisitos Não Funcionais:
+#Requisitos Não Funcionais:
+
 | Requisitos |
 | ------------ |
 | Inclusão de banco de dados (SQLite). |
@@ -46,7 +47,7 @@ Requisitos Não Funcionais:
 
 ![image](https://user-images.githubusercontent.com/62629293/122851910-28938680-d2e6-11eb-98cd-97e532fb679c.png)
 
-Tecnologias utilizadas:
+# Tecnologias Utilizadas:
 
 Front-End & Back-end:
 - CSS
@@ -58,7 +59,7 @@ Front-End & Back-end:
 Banco de Dados:
 - SQLite.
 
-## Desenvolvimento
+# Desenvolvimento
 
 Para Construção do projeto usamos algumas ferramentas para desenvolvimento do aplicativo e também para nos auxiliarmos nas atividades a serem feitas. A primeira delas foi a ferramenta Trello onde conseguimos distribuir as tarefas de cada intergrante do projeto, logo após partimos para o Figma onde criamos o protótipo e decidimos como iria ser o aplicativo. Por fim utilizamos as ferramentas  VsCode, SQLite e JQuery para desenvolvimento do aplicativo.
 
