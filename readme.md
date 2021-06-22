@@ -55,7 +55,7 @@ Banco de Dados:
 
 ## Desenvolvimento
 
-Para Construção do projeto usamos algumas ferramentas para desenvolvimento do aplicativo e também para nos auxiliarmos nas atividades a serem feitas. O primeiro deles foi a ferramenta Trello onde conseguimos distribuir as tarefas de cada intergrante do projeto, logo após partimos para o Figma onde criamos o protótipo e decidimos como iria ser o aplicativo. Por fim utilizamos as ferramentas  VsCode, SQLite e JQuery para desenvolvimento do aplicativo.
+Para Construção do projeto usamos algumas ferramentas para desenvolvimento do aplicativo e também para nos auxiliarmos nas atividades a serem feitas. A primeira delas foi a ferramenta Trello onde conseguimos distribuir as tarefas de cada intergrante do projeto, logo após partimos para o Figma onde criamos o protótipo e decidimos como iria ser o aplicativo. Por fim utilizamos as ferramentas  VsCode, SQLite e JQuery para desenvolvimento do aplicativo.
 
  
 
