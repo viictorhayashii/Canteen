@@ -55,15 +55,20 @@ Banco de Dados:
 
 ##### Aplicativo
 
+
 ![image](https://user-images.githubusercontent.com/49460098/122841033-ae590700-d2d1-11eb-83a0-b43bfe3036bc.png)
 
 Tela de Cadastro do Aplicativo
 - Nesta tela o usuario realiza cadastro e logo após faz o login.
 
+
+
 ![image](https://user-images.githubusercontent.com/49460098/122841913-b06f9580-d2d2-11eb-94d7-cb6a67c7ed76.png)
 
 Tela Inicial
 - Onde o usuario define por onde navegar no aplicativo (Visualiazar cardapio, cupons e também os pontos de fidelidade).
+
+
 
 ![image](https://user-images.githubusercontent.com/49460098/122842484-de090e80-d2d3-11eb-8694-dd072b837f9e.png)
 
