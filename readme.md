@@ -53,6 +53,12 @@ Front-End & Back-end:
 Banco de Dados:
 - SQLite.
 
+## Desenvolvimento
+
+Para Construção do projeto usamos algumas ferramentas para desenvolvimento do aplicativo e também para nos auxiliarmos nas atividades a serem feitas. O primeiro deles foi a ferramenta Trello onde conseguimos distribuir as tarefas de cada intergrante do projeto, logo após partimos para o Figma onde criamos o protótipo e decidimos como iria ser o aplicativo. Por fim utilizamos as ferramentas  VsCode, SQLite e JQuery para desenvolvimento do aplicativo.
+
+ 
+
 ## Aplicativo
 
 
@@ -91,3 +97,4 @@ Banco de Dados:
 #### Permissões de Administrador
 - Telas onde o usuario executa o comando solicitado confirma a sua senha de administrador (Ex: cadastro de produto)
 
+## Desenvolvimento
