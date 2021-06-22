@@ -65,7 +65,7 @@ Para Construção do projeto usamos algumas ferramentas para desenvolvimento do 
 
 # Aplicativo
 
-![image](https://user-images.githubusercontent.com/49460098/122841033-ae590700-d2d1-11eb-83a0-b43bfe3036bc.png)
+![image](https://user-images.githubusercontent.com/62629293/122855704-fedd5e00-d2eb-11eb-9e51-b01e6da4f113.png)
 
 # Tela de Login do Aplicativo
 - Nesta tela o usuario realiza o login.
