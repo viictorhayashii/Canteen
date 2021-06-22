@@ -66,7 +66,7 @@ Para Construção do projeto usamos algumas ferramentas para desenvolvimento do 
 
 #### Tela de Cadastro do Aplicativo
 - Nesta tela o usuario realiza cadastro e logo após faz o login.
-- 
+
 ![image](https://user-images.githubusercontent.com/49460098/122841913-b06f9580-d2d2-11eb-94d7-cb6a67c7ed76.png)
 
 #### Tela Inicial
