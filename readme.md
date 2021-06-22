@@ -53,34 +53,38 @@ Front-End & Back-end:
 Banco de Dados:
 - SQLite.
 
-##### Aplicativo
+## Aplicativo
 
 
 ![image](https://user-images.githubusercontent.com/49460098/122841033-ae590700-d2d1-11eb-83a0-b43bfe3036bc.png)
 
-Tela de Cadastro do Aplicativo
+#### Tela de Cadastro do Aplicativo
 - Nesta tela o usuario realiza cadastro e logo após faz o login.
 
 
 
 ![image](https://user-images.githubusercontent.com/49460098/122841913-b06f9580-d2d2-11eb-94d7-cb6a67c7ed76.png)
 
-Tela Inicial
+#### Tela Inicial
 - Onde o usuario define por onde navegar no aplicativo (Visualiazar cardapio, cupons e também os pontos de fidelidade).
 
 
 
 ![image](https://user-images.githubusercontent.com/49460098/122842484-de090e80-d2d3-11eb-8694-dd072b837f9e.png)
 
-Cardapio Online
+#### Cardapio Online
 - Nesta tela o "Usuario Cliente" visualiza o cardapio que a cantina disponizando, e consequentemente ja escolhe o produto que deseja.
 
 
+![image](https://user-images.githubusercontent.com/49460098/122843130-1bba6700-d2d5-11eb-8500-15f681a77196.png)
 
+#### Programa de Fidelidade
+- Tela onde é computadorizado o programa de desconto.
 
+![image](https://user-images.githubusercontent.com/49460098/122843483-ee21ed80-d2d5-11eb-9157-c66886dd0270.png)
 
-
-
+#### Acesso do Admistrador
+- Tela onde o administrador realiza login e tem a permissão para realizar cadastro e exclusão de produtos e cupons.
 
 
 
