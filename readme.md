@@ -39,6 +39,7 @@ Requisitos Não Funcionais:
 
 
 ![image](https://user-images.githubusercontent.com/73305767/121069652-1b35b280-c7a4-11eb-9422-b5216edc10ac.png)
+![image](https://user-images.githubusercontent.com/62629293/122851910-28938680-d2e6-11eb-98cd-97e532fb679c.png)
 
 
 Tecnologias utilizadas:
