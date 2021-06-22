@@ -70,7 +70,7 @@ Para Construção do projeto usamos algumas ferramentas para desenvolvimento do 
 # Tela de Login do Aplicativo
 - Nesta tela o usuario realiza o login.
 
-![image](https://user-images.githubusercontent.com/49460098/122841913-b06f9580-d2d2-11eb-94d7-cb6a67c7ed76.png)
+![image](https://user-images.githubusercontent.com/62629293/122855486-b1f98780-d2eb-11eb-8e18-4d6934323e9f.png)
 
 # Tela Inicial
 - Onde o usuario define por onde navegar no aplicativo (Visualiazar cardapio, cupons e também os pontos de fidelidade).
