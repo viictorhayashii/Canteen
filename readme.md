@@ -91,7 +91,11 @@ Para Construção do projeto usamos algumas ferramentas para desenvolvimento do 
 # Acesso do Admistrador
 - Tela onde o administrador realiza login e tem a permissão para realizar cadastro e exclusão de produtos e cupons.
 
-![image](https://user-images.githubusercontent.com/49460098/122844512-33471f00-d2d8-11eb-9608-c8b214ff7e18.png)
+![image](https://user-images.githubusercontent.com/62629293/122855014-f0427700-d2ea-11eb-90eb-7ba4ac93ee4f.png)
+![image](https://user-images.githubusercontent.com/62629293/122855046-ff292980-d2ea-11eb-885f-bb76a8891022.png)
+![image](https://user-images.githubusercontent.com/62629293/122855067-06e8ce00-d2eb-11eb-85c5-5abc47239278.png)
+![image](https://user-images.githubusercontent.com/62629293/122855080-0f410900-d2eb-11eb-99b4-c902814be160.png)
+
 
 # Permissões de Administrador
 - Telas onde o usuario executa o comando solicitado confirma a sua senha de administrador (Ex: cadastro de produto)
