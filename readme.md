@@ -38,9 +38,7 @@ Requisitos Não Funcionais:
 | Após e esquecimento da senha será enviado um email para a redefinição da senha. |
 
 
-![image](https://user-images.githubusercontent.com/73305767/121069652-1b35b280-c7a4-11eb-9422-b5216edc10ac.png)
 ![image](https://user-images.githubusercontent.com/62629293/122851910-28938680-d2e6-11eb-98cd-97e532fb679c.png)
-
 
 Tecnologias utilizadas:
 
@@ -58,37 +56,34 @@ Banco de Dados:
 
 Para Construção do projeto usamos algumas ferramentas para desenvolvimento do aplicativo e também para nos auxiliarmos nas atividades a serem feitas. A primeira delas foi a ferramenta Trello onde conseguimos distribuir as tarefas de cada intergrante do projeto, logo após partimos para o Figma onde criamos o protótipo e decidimos como iria ser o aplicativo. Por fim utilizamos as ferramentas  VsCode, SQLite e JQuery para desenvolvimento do aplicativo.
 
- 
-
-## Aplicativo
-
+# Aplicativo
 
 ![image](https://user-images.githubusercontent.com/49460098/122841033-ae590700-d2d1-11eb-83a0-b43bfe3036bc.png)
 
-#### Tela de Cadastro do Aplicativo
+# Tela de Cadastro do Aplicativo
 - Nesta tela o usuario realiza cadastro e logo após faz o login.
 
 ![image](https://user-images.githubusercontent.com/49460098/122841913-b06f9580-d2d2-11eb-94d7-cb6a67c7ed76.png)
 
-#### Tela Inicial
+# Tela Inicial
 - Onde o usuario define por onde navegar no aplicativo (Visualiazar cardapio, cupons e também os pontos de fidelidade).
 
 ![image](https://user-images.githubusercontent.com/49460098/122842484-de090e80-d2d3-11eb-8694-dd072b837f9e.png)
 
-#### Cardapio Online
+# Cardapio Online
 - Nesta tela o "Usuario Cliente" visualiza o cardapio (separados por categorias) que a cantina disponizando, e consequentemente ja escolhe o produto que deseja.
 
 ![image](https://user-images.githubusercontent.com/49460098/122843130-1bba6700-d2d5-11eb-8500-15f681a77196.png)
 
-#### Programa de Fidelidade
+# Programa de Fidelidade
 - Tela onde é computadorizado o programa de desconto.
 
 ![image](https://user-images.githubusercontent.com/49460098/122843483-ee21ed80-d2d5-11eb-9157-c66886dd0270.png)
 
-#### Acesso do Admistrador
+# Acesso do Admistrador
 - Tela onde o administrador realiza login e tem a permissão para realizar cadastro e exclusão de produtos e cupons.
 
 ![image](https://user-images.githubusercontent.com/49460098/122844512-33471f00-d2d8-11eb-9608-c8b214ff7e18.png)
 
-#### Permissões de Administrador
+# Permissões de Administrador
 - Telas onde o usuario executa o comando solicitado confirma a sua senha de administrador (Ex: cadastro de produto)
