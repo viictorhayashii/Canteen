@@ -37,7 +37,7 @@ Também oferecemos o sistema de Cupons e Fidelização ao cliente, estimulando o
 | Cadastro de Aluno | O Sistema deve realizar o cadastro de alunos e vincula-los com as cantinas. |
 | Validação de Administrador | O Sistema deverá dar acesso somente a usuarios com acesso de Administrador. |
 
-#Requisitos Não Funcionais:
+# Requisitos Não Funcionais:
 
 | Requisitos |
 | ------------ |
