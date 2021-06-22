@@ -85,7 +85,8 @@ Para Construção do projeto usamos algumas ferramentas para desenvolvimento do 
 # Programa de Fidelidade
 - Tela onde é computadorizado o programa de desconto.
 
-![image](https://user-images.githubusercontent.com/49460098/122843483-ee21ed80-d2d5-11eb-9157-c66886dd0270.png)
+![image](https://user-images.githubusercontent.com/62629293/122854686-74e0c580-d2ea-11eb-9320-70a3ee29862a.png)
+![image](https://user-images.githubusercontent.com/62629293/122854635-62ff2280-d2ea-11eb-9fb4-34fce9e18c79.png)
 
 # Acesso do Admistrador
 - Tela onde o administrador realiza login e tem a permissão para realizar cadastro e exclusão de produtos e cupons.
