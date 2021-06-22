@@ -51,7 +51,7 @@ Também oferecemos o sistema de Cupons e Fidelização ao cliente, estimulando o
 
 Front-End & Back-end:
 
-- ![image](https://user-images.githubusercontent.com/62629293/122856071-8b881c00-d2ec-11eb-94ae-4746f53bd7dc.png)
+![image](https://user-images.githubusercontent.com/62629293/122856071-8b881c00-d2ec-11eb-94ae-4746f53bd7dc.png)
 - JQUERY
 - BOOTSTRAP
 
