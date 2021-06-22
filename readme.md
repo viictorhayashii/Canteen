@@ -73,7 +73,7 @@ Banco de Dados:
 ![image](https://user-images.githubusercontent.com/49460098/122842484-de090e80-d2d3-11eb-8694-dd072b837f9e.png)
 
 #### Cardapio Online
-- Nesta tela o "Usuario Cliente" visualiza o cardapio que a cantina disponizando, e consequentemente ja escolhe o produto que deseja.
+- Nesta tela o "Usuario Cliente" visualiza o cardapio (separados por categorias) que a cantina disponizando, e consequentemente ja escolhe o produto que deseja.
 
 
 ![image](https://user-images.githubusercontent.com/49460098/122843130-1bba6700-d2d5-11eb-8500-15f681a77196.png)
@@ -86,10 +86,8 @@ Banco de Dados:
 #### Acesso do Admistrador
 - Tela onde o administrador realiza login e tem a permissão para realizar cadastro e exclusão de produtos e cupons.
 
+![image](https://user-images.githubusercontent.com/49460098/122844512-33471f00-d2d8-11eb-9608-c8b214ff7e18.png)
 
-
-
-
-
-
+#### Permissões de Administrador
+- Telas onde o usuario executa o comando solicitado confirma a sua senha de administrador (Ex: cadastro de produto)
 
