@@ -85,7 +85,7 @@ Para Construção do projeto usamos algumas ferramentas para desenvolvimento do 
 # Programa de Fidelidade
 - Tela onde é computadorizado o programa de desconto.
 
-![image](https://user-images.githubusercontent.com/62629293/122854686-74e0c580-d2ea-11eb-9320-70a3ee29862a.png)
+![image](https://user-images.githubusercontent.com/62629293/122854762-9772de80-d2ea-11eb-8f52-2351970cd6d2.png)
 ![image](https://user-images.githubusercontent.com/62629293/122854635-62ff2280-d2ea-11eb-9fb4-34fce9e18c79.png)
 
 # Acesso do Admistrador
